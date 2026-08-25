@@ -1,0 +1,341 @@
+# RegWatch register — week ending 2026-08-23
+# Converted from the weekly brief. Facts trace to the linked primary source.
+# `verified` records the date the primary source was last re-checked.
+
+window:
+  start: 2026-08-17
+  end: 2026-08-23
+  coverage: full
+
+items:
+
+  - id: 2026-08-23-us-002
+    jurisdiction: US
+    regulator: Office of Foreign Assets Control
+    regulator_short: OFAC
+    instrument_type: sanctions_action
+    title: >-
+      Three OFAC action sets in four days across unrelated programmes, including
+      two rounds of Venezuela-related general licence changes
+    reference: null
+    published: 2026-08-18
+    effective: null
+    deadline: null
+    deadline_type: null
+    source_url: https://ofac.treasury.gov/recent-actions
+    verified: 2026-08-24
+
+    entity_scope:
+      - all_regulated_firms
+    functions_affected:
+      - financial_crime
+      - operations
+      - technology
+
+    scores:
+      actionability: 5
+      reach: 4
+
+    rationale: >-
+      Designations across ICC-related, Venezuela, counter-narcotics,
+      counter-terrorism, Cuba- and Iran-related programmes on 18, 20 and 21
+      August, together with Russia- and Venezuela-related general licences and
+      an accompanying FAQ. The designations are routine list maintenance. The
+      general-licence churn is not: Venezuela-related GLs moved twice inside a
+      fortnight, and an amended GL retains its number, so any control keyed to
+      GL number rather than GL text will silently apply superseded terms.
+      Screening list ingestion is usually automated; general-licence tracking
+      usually is not.
+
+    required_action: >-
+      Re-check the text of any Venezuela- and Russia-related general licence
+      relied on, rather than confirming the GL number is still current. Confirm
+      whether general-licence terms are tracked in a controlled system or a
+      spreadsheet, and who owns expiry.
+
+    status: open
+    supersedes: null
+
+  - id: 2026-08-23-uk-003
+    jurisdiction: UK
+    regulator: Financial Conduct Authority
+    regulator_short: FCA
+    instrument_type: supervisory_statement
+    title: >-
+      FCA warns on unregulated mini-bonds and loan notes, and states an
+      expectation that banks, PSPs and professional firms report suspicious
+      distribution
+    reference: null
+    published: 2026-08-20
+    effective: null
+    deadline: null
+    deadline_type: null
+    source_url: https://www.fca.org.uk/news/press-releases/consumers-warned-beware-risky-mini-bonds-and-loan-notes
+    verified: 2026-08-24
+
+    entity_scope:
+      - credit_institutions
+      - payment_service_providers
+      - designated_non_financial_businesses
+    functions_affected:
+      - financial_crime
+      - compliance
+      - onboarding
+
+    scores:
+      actionability: 3
+      reach: 4
+
+    rationale: >-
+      A consumer warning on unregulated loan notes and mini-bonds, using the
+      failure of litigation funder Woodville Consultants Ltd as the case study;
+      the FCA states it has issued over 1,200 warnings in 2026. Marketing
+      speculative illiquid securities to retail investors has been banned since
+      1 January 2021. The industry-facing part is the significant one: the FCA
+      cannot supervise an issuer outside the perimeter, so it supervises the
+      firms that touch the money instead, and names banks, payment providers,
+      lawyers, accountants and auditors as expected to report suspicious
+      distribution. Affected customers have no FOS or FSCS recourse, which
+      concentrates recovery pressure on whoever remains solvent and regulated.
+
+    required_action: >-
+      Confirm whether the FCA warning list is an input to adverse-media and
+      customer screening. Be able to evidence what the firm did on becoming
+      aware of an in-scope issuer among its customers or counterparties.
+
+    status: open
+    supersedes: null
+
+  - id: 2026-08-23-us-001
+    jurisdiction: US
+    regulator: Federal Trade Commission
+    regulator_short: FTC
+    instrument_type: enforcement
+    title: >-
+      Doxo and two co-founders to pay $2.1m to settle FTC allegations of
+      biller-impersonating search ads, undisclosed fees and non-consented
+      subscription enrolment
+    reference: null
+    published: 2026-08-17
+    effective: null
+    deadline: null
+    deadline_type: null
+    source_url: https://www.ftc.gov/news-events/news/press-releases/2026/08/bill-payment-firm-doxo-pay-21-million-settle-ftc-allegations-it-deceived-consumers-charged-them-add
+    verified: 2026-08-24
+
+    entity_scope:
+      - payment_service_providers
+      - money_service_businesses
+    functions_affected:
+      - compliance
+      - financial_crime
+      - operations
+
+    scores:
+      actionability: 3
+      reach: 4
+
+    rationale: >-
+      Following a 2024 complaint and partial summary judgment, the FTC announced
+      a proposed settlement under which Doxo and co-founders Steve Shivers and
+      Roger Parks pay $2.1m in consumer redress. The allegation was that search
+      ads and landing pages carrying billers' names and logos presented Doxo as
+      an official payment channel where no relationship existed, with
+      undisclosed delivery fees and subscription enrolment; a court found a
+      Restore Online Shoppers' Confidence Act violation. The order is proposed
+      and filed in federal court in Washington state, not yet finally entered.
+      What makes this a control question rather than a news item is that the
+      respondent is a funded, incorporated company with a compliance function,
+      not an external fraudster — which is precisely what impersonation
+      detection is not built to catch.
+
+    required_action: >-
+      Establish whether the firm's paid-search keyword set and ad copy have ever
+      been reviewed by second line, and who owns that review. Confirm whether
+      brand-term bidding by third parties is monitored by the fraud function.
+
+    status: open
+    supersedes: null
+
+  - id: 2026-08-23-uk-001
+    jurisdiction: UK
+    regulator: Financial Conduct Authority
+    regulator_short: FCA
+    instrument_type: enforcement
+    title: >-
+      FCA fines and bans former SVS Securities CEO Demetrios Hadjigeorgiou;
+      penalty reduced on reclassification of the conduct
+    reference: Final Notice 2026 — Demetrios Christos Hadjigeorgiou
+    published: 2026-08-19
+    effective: null
+    deadline: null
+    deadline_type: null
+    source_url: https://www.fca.org.uk/news/press-releases/fca-fines-bans-former-svs-securities-ceo
+    verified: 2026-08-24
+
+    entity_scope:
+      - all_regulated_firms
+      - investment_firms
+    functions_affected:
+      - compliance
+      - legal
+      - board
+
+    scores:
+      actionability: 2
+      reach: 4
+
+    rationale: >-
+      Prohibition from senior management functions plus a £56,400 penalty. While
+      CEO from May 2018 to August 2019, SVS invested customer money including
+      pension savings in high-risk products issued by parties making significant
+      payments to the firm, and he failed to challenge a 10% markdown applied to
+      customers' bond investments on sale, generating £359,800 for SVS. The
+      operative detail is not the fine: an April 2024 Decision Notice proposed
+      £84,600, and on settlement — with the referral to the Upper Tribunal
+      withdrawn — the FCA left its factual findings unchanged but reclassified
+      the markdown conduct from a want of integrity to a failure to exercise due
+      skill, care and diligence under Statement of Principle 6, reducing the
+      penalty. The same facts, differently characterised, produce a materially
+      different sanction. That characterisation boundary is where SMCR defence
+      arguments actually live.
+
+    required_action: >-
+      Monitor only. No obligation change. Worth reading the conduct sections of
+      the Final Notice against current senior-manager fitness and propriety
+      files, and noting the April 2024 to August 2026 interval when modelling
+      enforcement timelines.
+
+    status: open
+    supersedes: null
+
+  - id: 2026-08-23-uk-002
+    jurisdiction: UK
+    regulator: Financial Conduct Authority
+    regulator_short: FCA
+    instrument_type: enforcement
+    title: >-
+      FCA bans senior manager of debt management firm for lack of honesty and
+      integrity
+    reference: null
+    published: 2026-08-18
+    effective: null
+    deadline: null
+    deadline_type: null
+    source_url: https://www.fca.org.uk/news/press-releases/fca-bans-senior-manager-lack-honesty-and-integrity
+    verified: 2026-08-24
+
+    entity_scope:
+      - all_regulated_firms
+    functions_affected:
+      - compliance
+      - board
+
+    scores:
+      actionability: 2
+      reach: 3
+
+    rationale: >-
+      Prohibition of Howard Roland Duckett of Beauforce for repeatedly
+      misleading the FCA, relying on fabricated evidence, presenting an invented
+      person as fronting the business, and failing to disclose a High Court
+      director disqualification. Read alongside the SVS notice published the
+      following day, the pairing shows the FCA pursuing individuals rather than
+      firms in the same week. The disqualification non-disclosure is the
+      transferable point: it is a check available to any firm at no cost.
+
+    required_action: >-
+      Monitor only. Confirm that director disqualification registers are checked
+      as part of senior-manager onboarding and periodic fitness and propriety
+      review.
+
+    status: open
+    supersedes: null
+
+  - id: 2026-08-23-eu-001
+    jurisdiction: EU
+    regulator: European Securities and Markets Authority
+    regulator_short: ESMA
+    instrument_type: consultation_paper
+    title: >-
+      ESMA consults on the reporting framework for clearing activity at
+      recognised third-country CCPs
+    reference: null
+    published: 2026-08-18
+    effective: null
+    deadline: 2026-10-12
+    deadline_type: consultation_close
+    source_url: https://www.esma.europa.eu/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country
+    verified: 2026-08-24
+
+    entity_scope:
+      - credit_institutions
+      - investment_firms
+    functions_affected:
+      - compliance
+      - operations
+      - data
+
+    scores:
+      actionability: 2
+      reach: 3
+
+    rationale: >-
+      A consultation on how clearing activity at recognised third-country CCPs
+      is to be reported. Low current materiality and high forward significance —
+      the two are not the same thing. Reporting frameworks are how a supervisor
+      assembles an evidence base before acting, and the question this one is
+      built to answer is how much EU clearing still sits outside the EU. The
+      obligation arriving now is data collection. Any relocation pressure would
+      arrive later, on the strength of what the data shows.
+
+    required_action: >-
+      Consider responding. Feedback on the reporting framework, templates and
+      format is invited by 12 October 2026, confirmed on the consultation page.
+
+    status: open
+    supersedes: null
+
+  - id: 2026-08-23-uk-004
+    jurisdiction: UK
+    regulator: Financial Conduct Authority
+    regulator_short: FCA
+    instrument_type: supervisory_statement
+    title: >-
+      FCA appoints financial services attachés to Mumbai and Abu Dhabi
+    reference: null
+    published: 2026-08-17
+    effective: null
+    deadline: null
+    deadline_type: null
+    source_url: https://www.fca.org.uk/news/press-releases/fca-expands-global-presence-new-attaches-india-and-uae
+    verified: 2026-08-24
+
+    entity_scope:
+      - all_regulated_firms
+    functions_affected:
+      - financial_crime
+      - compliance
+
+    scores:
+      actionability: 1
+      reach: 3
+
+    rationale: >-
+      Recorded rather than briefed. The rubric excludes routine personnel
+      announcements, and on its face this is one; it is kept because the
+      postings are structural rather than personal. Sabina Saini takes post at
+      the British Deputy High Commission in Mumbai from 10 August and Darine
+      Obeid at the British Embassy in Abu Dhabi from 31 August, into two of the
+      highest-volume, highest-scrutiny corridors into UK financial services. The
+      stated remit is trade and investment promotion and the release does not
+      mention financial crime. Permanent presence in a jurisdiction tends to
+      precede improved information flow, which tends to precede better-informed
+      supervisory questions. Nothing follows from this today.
+
+    required_action: >-
+      Monitor only. Note for the next review of the high-risk jurisdiction
+      matrix whether UAE and India corridor entries are static.
+
+    status: open
+    supersedes: null
