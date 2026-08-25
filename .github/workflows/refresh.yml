@@ -1,0 +1,40 @@
+name: refresh generated output
+
+# DEADLINES.md counts days from the date it was rendered, so it goes stale on
+# its own. This re-renders on a timer and commits only when something actually
+# moved. validate.yml checks the register; this one keeps the output honest.
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # 06:00 UTC daily (08:00 Madrid in summer, 07:00 in winter)
+  workflow_dispatch:      # also runnable by hand from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install pyyaml
+
+      - name: Re-render
+        run: python3 render.py
+
+      - name: Commit only if the output changed
+        run: |
+          git add DEADLINES.md briefs index.html
+          if git diff --cached --quiet; then
+            echo "Nothing moved — no commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh generated output ($(date -u +%Y-%m-%d))"
+          git push
