@@ -1,0 +1,416 @@
+# RegWatch register — week ending 2026-08-25
+# Converted from the weekly brief. Facts trace to the linked primary source.
+# `verified` records the date the primary source was last re-checked.
+#
+# PARTIAL. Two editions already ran inside this window (23 and 24 August). What
+# they briefed is not re-recorded here. This file carries what landed on 24 and
+# 25 August, plus items the earlier editions missed. The 24 August edition was
+# never converted to a register file, so developments briefed only there are not
+# yet recorded anywhere in this register.
+
+window:
+  start: 2026-08-18
+  end: 2026-08-25
+  coverage: partial
+  note: >-
+    Overlapping window. The 23 and 24 August editions covered 17-23 and 17-24
+    August respectively; their items are not repeated here. Do not read the
+    absence of FCA, ESMA, SEC Regulation Crypto Assets or FATF items in this
+    file as an absence of developments — read it as those items sitting in the
+    23 August file, or, for the 24 August edition, nowhere yet.
+
+items:
+
+  - id: 2026-08-25-us-002
+    jurisdiction: US
+    regulator: Office of Foreign Assets Control
+    regulator_short: OFAC
+    instrument_type: sanctions_action
+    title: >-
+      Five Iran sectoral determinations issued in one day alongside roughly 60
+      designations, with General Licenses F and G suspended and a wind-down
+      licence issued
+    reference: null
+    published: 2026-08-24
+    effective: 2026-08-24
+    deadline: null
+    deadline_type: null
+    source_url: https://home.treasury.gov/news/press-releases/sb0613/
+    verified: 2026-08-25
+
+    entity_scope:
+      - all_regulated_firms
+      - credit_institutions
+      - money_service_businesses
+      - investment_firms
+    functions_affected:
+      - financial_crime
+      - compliance
+      - operations
+      - technology
+
+    scores:
+      actionability: 5
+      reach: 5
+
+    rationale: >-
+      Treasury designated nearly 60 entities, individuals and vessels with nodes
+      in the UAE, Hong Kong, China, Singapore, Switzerland and Europe, under
+      Executive Orders 13382, 13694 as amended, 13902, 13224 and 13553. The
+      designations are the visible part and the least consequential. OFAC also
+      issued five sectoral determinations — digital assets, advanced technology
+      acquisition, gold, commercial aviation, and shipping and tanker services.
+      A determination creates exposure by category rather than by name, so a
+      counterparty clean against every list held can still be sanctionable for
+      what it does, and a screening stack built on name matching has nothing to
+      match against. Separately and more urgently, Iran General Licenses F
+      (sports exchanges) and G (academic exchanges) were suspended effective 24
+      August: activity a firm has been processing for years on the strength of a
+      licence last read in 2023 stopped being authorised on Monday. General
+      Licence BB authorises wind-down of certain previously authorised
+      transactions; wind-down licences carry a deadline and that date could not
+      be read on a primary source, so no expiry is asserted here.
+
+    required_action: >-
+      Two distinct pieces of work, and the second is the one that will be
+      skipped. First, ingest the designations as normal. Second, re-read the
+      customer and counterparty book against the five sectoral activity
+      definitions, which no list feed will surface. Separately and immediately,
+      identify any payment flow relying on Iran General Licence F or G, which
+      lost its authority on 24 August. Read the General Licence BB text directly
+      to establish its wind-down expiry — that date is the most time-critical
+      unknown arising from this action.
+
+    status: open
+    supersedes: null
+
+  - id: 2026-08-25-us-001
+    jurisdiction: US
+    regulator: Office of Foreign Assets Control
+    regulator_short: OFAC
+    instrument_type: sanctions_action
+    title: >-
+      Syria removed from the State Sponsor of Terrorism list and Hay'at Tahrir
+      al-Sham delisted, with General License 25 revoked and two individuals
+      designated the same day
+    reference: null
+    published: 2026-08-24
+    effective: 2026-08-24
+    deadline: null
+    deadline_type: null
+    source_url: https://ofac.treasury.gov/recent-actions/20260824
+    verified: 2026-08-25
+
+    entity_scope:
+      - all_regulated_firms
+      - credit_institutions
+      - money_service_businesses
+    functions_affected:
+      - financial_crime
+      - compliance
+      - onboarding
+      - operations
+
+    scores:
+      actionability: 5
+      reach: 4
+
+    rationale: >-
+      The State Department rescinded Syria's designation as a State Sponsor of
+      Terrorism and revoked Hay'at Tahrir al-Sham's Foreign Terrorist
+      Organization designation. OFAC removed HTS from the SDN List and from the
+      Global Terrorism Sanctions Regulations, revoked Syria General License 25,
+      and updated FAQs 1220, 1221 and 1222 while removing FAQ 1223. Syria is no
+      longer restricted under 31 CFR part 596. Delisting is not clearance, and
+      the pairing proves it: HTS came off the SDN List and two individuals with
+      former HTS affiliations went on, in the same action. The operational trap
+      is General License 25. A revoked general licence normally signals
+      tightening; here the licence was permission that existed only because of a
+      prohibition that no longer applies. A firm reading "GL 25 revoked" in a
+      feed without reading why will draw the opposite conclusion to the correct
+      one. Commercial pressure to re-enter Syria will reach compliance inboxes
+      faster than any updated risk assessment, because Treasury's own framing is
+      investment promotion.
+
+    required_action: >-
+      Establish whether the firm has a documented process for removing a
+      restriction, carrying the same approvals required for adding one, and who
+      signs off that a delisting has been correctly interpreted. Correct any
+      control that has logged the GL 25 revocation as a tightening. Note that
+      the State Department Syria sanctions and export controls advisory of 24
+      August could not be retrieved this run; it is the document that would
+      answer what remains restricted under the Caesar Act and export controls,
+      and needs a manual read before any Syria exposure is reopened.
+
+    status: open
+    supersedes: null
+
+  - id: 2026-08-25-eu-001
+    jurisdiction: EU
+    regulator: Council of the European Union
+    regulator_short: Council
+    instrument_type: sanctions_action
+    title: >-
+      EU targeted Syria measures remain in force and unchanged while the US
+      delists, leaving an OFAC-pegged global policy looser than EU law allows
+    reference: >-
+      Council Decision (CFSP) 2026/1105; Council Implementing Regulation (EU)
+      2026/1107; Council Implementing Decision (CFSP) 2026/1106
+    published: 2026-05-18
+    effective: null
+    deadline: 2027-06-01
+    deadline_type: measure_expiry
+    source_url: https://www.consilium.europa.eu/en/press/press-releases/2026/05/18/syria-council-renews-restrictive-measures-targeting-the-former-al-assad-regime-for-one-year-and-de-lists-certain-entities/
+    verified: 2026-08-25
+
+    entity_scope:
+      - all_regulated_firms
+      - credit_institutions
+      - investment_firms
+    functions_affected:
+      - financial_crime
+      - compliance
+      - legal
+      - operations
+
+    scores:
+      actionability: 4
+      reach: 4
+
+    rationale: >-
+      Recorded on an absence of movement rather than a development, which is why
+      the published date sits outside the window. The EU lifted economic
+      sanctions on Syria in May 2025 but kept targeted measures, and on 18 May
+      2026 the Council renewed those measures against persons and entities
+      linked to the former al-Assad regime until 1 June 2027, de-listing seven
+      entities including the Ministries of Defence and Interior. Nothing was
+      published in Brussels in the 18-25 August window. Divergence is not new;
+      the direction of this one is. For four years the US restricted further and
+      faster than Europe, which made "apply the strictest standard globally" a
+      defensible shortcut. Here the US is the loosest of the three. A group
+      running one sanctions policy pegged to OFAC will now under-restrict in the
+      EU, and will do so on the back of a US announcement that reads like good
+      news. On the correspondent chain, a US bank may clear a Syria-related
+      payment its EU correspondent cannot touch, and the party that discovers
+      the mismatch is whoever holds the payment when it fails.
+
+    required_action: >-
+      Establish whether the group sanctions policy is pegged to OFAC in
+      substance, whatever it says on its face, and whether any US-entity policy
+      update issued this week has been applied to EU entities where it should
+      not be. Diarise 1 June 2027 as the date EU and US positions re-converge or
+      diverge further.
+
+    status: open
+    supersedes: null
+
+  - id: 2026-08-25-uk-001
+    jurisdiction: UK
+    regulator: HM Treasury
+    regulator_short: HM Treasury
+    instrument_type: supervisory_statement
+    title: >-
+      UK Syria sanctions regulations remain in force and unamended, with
+      statutory guidance making no reference to Hay'at Tahrir al-Sham
+    reference: The Syria (Sanctions) (EU Exit) Regulations 2019
+    published: 2026-05-01
+    effective: null
+    deadline: null
+    deadline_type: null
+    source_url: https://www.gov.uk/government/publications/syria-sanctions-guidance/syria-sanctions-guidance
+    verified: 2026-08-25
+
+    entity_scope:
+      - all_regulated_firms
+      - credit_institutions
+    functions_affected:
+      - financial_crime
+      - compliance
+      - legal
+
+    scores:
+      actionability: 4
+      reach: 3
+
+    rationale: >-
+      As with the EU record, this is an absence rather than an event, and the
+      published date is that of the last guidance update rather than anything in
+      the window. The Syria (Sanctions) (EU Exit) Regulations 2019 remain in
+      force with financial, trade, director disqualification and immigration
+      measures. HM Treasury's statutory guidance was last updated on 1 May 2026
+      and contains no reference to Hay'at Tahrir al-Sham, which means the UK
+      position on HTS cannot be read off the guidance either way and requires
+      the regulations and the consolidated list to be checked directly. Nothing
+      was published in London in the 18-25 August window. A UK subsidiary of a
+      US group will receive a policy update this week that does not apply to it.
+
+    required_action: >-
+      Confirm the UK position on HTS from the regulations and the consolidated
+      list rather than from the statutory guidance, which is silent. Check that
+      no UK entity has adopted a US-sourced relaxation.
+
+    status: open
+    supersedes: null
+
+  - id: 2026-08-25-us-004
+    jurisdiction: US
+    regulator: Office of Foreign Assets Control
+    regulator_short: OFAC
+    instrument_type: sanctions_action
+    title: >-
+      Ten designations over a Hizballah and IRGC-Qods Force cash network moving
+      funds by airline courier through Turkish exchange houses
+    reference: Executive Order 13224
+    published: 2026-08-20
+    effective: null
+    deadline: null
+    deadline_type: null
+    source_url: https://home.treasury.gov/news/press-releases/sb0611/
+    verified: 2026-08-25
+
+    entity_scope:
+      - credit_institutions
+      - money_service_businesses
+      - payment_service_providers
+    functions_affected:
+      - financial_crime
+      - onboarding
+      - operations
+
+    scores:
+      actionability: 3
+      reach: 4
+
+    rationale: >-
+      Treasury designated ten individuals and re-designated Hizballah over a
+      network Treasury says moved up to hundreds of millions of dollars. The
+      described mechanics are bulk cash smuggled by commercial airline couriers
+      between Lebanon, Turkey, the UAE and Iran, with Turkish exchange houses
+      used as fronts. Read next to the money laundering sentencing briefed on 24
+      August — $20 million in bulk cash deposited at major US banks on fake
+      driver's licences — a pattern runs through the whole month: two unrelated
+      networks, two continents, and in both cases physical cash carried by
+      people and laundered through an institution that accepted it. Not crypto,
+      not trade-based layering. The exchange-house element carries the most
+      read-across for European and UK firms, where the exposure is rarely the
+      courier but the money service business banked three steps down the chain.
+
+    required_action: >-
+      Beyond list ingestion, test whether correspondent due diligence on money
+      service businesses and exchange houses examines what that customer's own
+      customer base looks like, or stops at the immediate relationship. Check
+      that cash and remittance monitoring thresholds on Turkey, Lebanon and UAE
+      corridors are calibrated against courier-scale structuring rather than
+      digital typologies.
+
+    status: open
+    supersedes: null
+
+  - id: 2026-08-25-us-005
+    jurisdiction: US
+    regulator: Securities and Exchange Commission
+    regulator_short: SEC
+    instrument_type: enforcement
+    title: >-
+      SEC charges three former Tricolor executives over auto loans pledged
+      simultaneously to multiple lenders and ABS offerings across five years
+    reference: null
+    published: 2026-08-18
+    effective: null
+    deadline: null
+    deadline_type: null
+    source_url: https://www.sec.gov/newsroom/press-releases/2026-77-sec-charges-former-executives-fraud-connection-19-billion-collapse-subprime-auto-lender-tricolor
+    verified: 2026-08-25
+
+    entity_scope:
+      - credit_institutions
+      - investment_firms
+    functions_affected:
+      - financial_crime
+      - operations
+      - compliance
+
+    scores:
+      actionability: 3
+      reach: 3
+
+    rationale: >-
+      The former CEO, CFO and a senior director of finance of subprime auto
+      lender Tricolor are charged over a scheme running from 2020 to the
+      company's September 2025 bankruptcy: hundreds of millions of dollars of
+      auto loans pledged simultaneously to multiple asset-backed securities
+      offerings and multiple lenders while represented as free of other liens,
+      with loan data altered so defaulted loans appeared current and therefore
+      eligible for securitisation. Tricolor raised $1.9 billion through ABS
+      offerings, with $945 million outstanding at bankruptcy. Parallel criminal
+      charges were brought in December 2025 in the Southern District of New
+      York. Double-pledging works for the same reason every time: no single
+      party sees the whole collateral pool. Each lender verified its own file
+      and each file looked clean. The control that would have caught it —
+      independent verification that an asset is not already encumbered elsewhere
+      — sits in the gap between credit, operations and financial crime and is
+      owned by none of them. The loan-data manipulation is the tell: the records
+      were made to look right, so document review alone was never going to find
+      it.
+
+    required_action: >-
+      Establish who owns verification that pledged collateral is not already
+      encumbered elsewhere, as distinct from verifying the file. If the answer
+      is credit, operations and financial crime each assuming another does it,
+      that is the finding.
+
+    status: open
+    supersedes: null
+
+  - id: 2026-08-25-us-003
+    jurisdiction: US
+    regulator: Department of Justice
+    regulator_short: DOJ
+    instrument_type: supervisory_statement
+    title: >-
+      DOJ launches a prosecutor-led National Fraud Detection Center pooling
+      FinCEN, IRS-CI and Inspectors General across thirteen departments
+    reference: null
+    published: 2026-08-24
+    effective: null
+    deadline: null
+    deadline_type: null
+    source_url: https://www.justice.gov/opa/pr/department-justice-announces-launch-national-fraud-detection-center-combat-fraud-against
+    verified: 2026-08-25
+
+    entity_scope:
+      - all_regulated_firms
+      - credit_institutions
+    functions_affected:
+      - financial_crime
+      - compliance
+      - data
+
+    scores:
+      actionability: 2
+      reach: 4
+
+    rationale: >-
+      Participants include the FBI, Homeland Security Investigations, IRS
+      Criminal Investigation, FinCEN, the Pandemic Response Accountability
+      Committee, Treasury, and Inspector General offices across thirteen
+      departments, alongside officials from seven states. The announcement names
+      no specific system and publishes no figures. Read it as a data story
+      rather than an enforcement one: a prosecutor-led centre pooling FinCEN
+      with thirteen Inspectors General is an analytic layer sitting on top of
+      SAR data, and analytic layers surface institutions that keep appearing in
+      other people's cases while making narrative quality matter in a way a
+      filing count never did. FinCEN's 2026 output already points here, with an
+      advisory on health care fraud schemes in March and an alert on federal
+      student aid fraud in July. Nothing is obliged today, which is why
+      actionability is low; the reach is wide because it changes what a SAR
+      programme is being judged on.
+
+    required_action: >-
+      Monitor only. No obligation change. Worth sampling recent SAR narratives
+      on government-benefit typologies and asking whether a lead generated from
+      them would have been usable by a third party with no knowledge of the
+      customer.
+
+    status: open
+    supersedes: null
