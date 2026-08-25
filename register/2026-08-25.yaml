@@ -131,6 +131,20 @@ items:
       one. Commercial pressure to re-enter Syria will reach compliance inboxes
       faster than any updated risk assessment, because Treasury's own framing is
       investment promotion.
+      For any group operating across US, EU and UK entities there is a
+      second-order effect that no US source will flag. The EU renewed its
+      targeted Syria measures on 18 May 2026, running to 1 June 2027, and the
+      UK's Syria (Sanctions) (EU Exit) Regulations 2019 remain in force and
+      unamended, with HM Treasury's statutory guidance — last updated 1 May
+      2026 — making no reference to Hay'at Tahrir al-Sham. Neither moved in
+      this window. For four years the US restricted further and faster than
+      Europe, which made "apply the strictest standard globally" a defensible
+      shortcut. Here the US is the loosest of the three, so a policy pegged to
+      OFAC now under-restricts in the EU and the UK, on the back of an
+      announcement that reads like good news. On the correspondent chain a US
+      bank may clear a Syria-related payment its EU or UK correspondent cannot
+      touch, and the party that discovers the mismatch is whoever is holding
+      the payment when it fails.
 
     required_action: >-
       Establish whether the firm has a documented process for removing a
@@ -141,113 +155,11 @@ items:
       August could not be retrieved this run; it is the document that would
       answer what remains restricted under the Caesar Act and export controls,
       and needs a manual read before any Syria exposure is reopened.
-
-    status: open
-    supersedes: null
-
-  - id: 2026-08-25-eu-001
-    jurisdiction: EU
-    regulator: Council of the European Union
-    regulator_short: Council
-    instrument_type: sanctions_action
-    title: >-
-      EU targeted Syria measures remain in force and unchanged while the US
-      delists, leaving an OFAC-pegged global policy looser than EU law allows
-    reference: >-
-      Council Decision (CFSP) 2026/1105; Council Implementing Regulation (EU)
-      2026/1107; Council Implementing Decision (CFSP) 2026/1106
-    published: 2026-05-18
-    effective: null
-    deadline: 2027-06-01
-    deadline_type: measure_expiry
-    source_url: https://www.consilium.europa.eu/en/press/press-releases/2026/05/18/syria-council-renews-restrictive-measures-targeting-the-former-al-assad-regime-for-one-year-and-de-lists-certain-entities/
-    verified: 2026-08-25
-
-    entity_scope:
-      - all_regulated_firms
-      - credit_institutions
-      - investment_firms
-    functions_affected:
-      - financial_crime
-      - compliance
-      - legal
-      - operations
-
-    scores:
-      actionability: 4
-      reach: 4
-
-    rationale: >-
-      Recorded on an absence of movement rather than a development, which is why
-      the published date sits outside the window. The EU lifted economic
-      sanctions on Syria in May 2025 but kept targeted measures, and on 18 May
-      2026 the Council renewed those measures against persons and entities
-      linked to the former al-Assad regime until 1 June 2027, de-listing seven
-      entities including the Ministries of Defence and Interior. Nothing was
-      published in Brussels in the 18-25 August window. Divergence is not new;
-      the direction of this one is. For four years the US restricted further and
-      faster than Europe, which made "apply the strictest standard globally" a
-      defensible shortcut. Here the US is the loosest of the three. A group
-      running one sanctions policy pegged to OFAC will now under-restrict in the
-      EU, and will do so on the back of a US announcement that reads like good
-      news. On the correspondent chain, a US bank may clear a Syria-related
-      payment its EU correspondent cannot touch, and the party that discovers
-      the mismatch is whoever holds the payment when it fails.
-
-    required_action: >-
-      Establish whether the group sanctions policy is pegged to OFAC in
-      substance, whatever it says on its face, and whether any US-entity policy
-      update issued this week has been applied to EU entities where it should
-      not be. Diarise 1 June 2027 as the date EU and US positions re-converge or
-      diverge further.
-
-    status: open
-    supersedes: null
-
-  - id: 2026-08-25-uk-001
-    jurisdiction: UK
-    regulator: HM Treasury
-    regulator_short: HM Treasury
-    instrument_type: supervisory_statement
-    title: >-
-      UK Syria sanctions regulations remain in force and unamended, with
-      statutory guidance making no reference to Hay'at Tahrir al-Sham
-    reference: The Syria (Sanctions) (EU Exit) Regulations 2019
-    published: 2026-05-01
-    effective: null
-    deadline: null
-    deadline_type: null
-    source_url: https://www.gov.uk/government/publications/syria-sanctions-guidance/syria-sanctions-guidance
-    verified: 2026-08-25
-
-    entity_scope:
-      - all_regulated_firms
-      - credit_institutions
-    functions_affected:
-      - financial_crime
-      - compliance
-      - legal
-
-    scores:
-      actionability: 4
-      reach: 3
-
-    rationale: >-
-      As with the EU record, this is an absence rather than an event, and the
-      published date is that of the last guidance update rather than anything in
-      the window. The Syria (Sanctions) (EU Exit) Regulations 2019 remain in
-      force with financial, trade, director disqualification and immigration
-      measures. HM Treasury's statutory guidance was last updated on 1 May 2026
-      and contains no reference to Hay'at Tahrir al-Sham, which means the UK
-      position on HTS cannot be read off the guidance either way and requires
-      the regulations and the consolidated list to be checked directly. Nothing
-      was published in London in the 18-25 August window. A UK subsidiary of a
-      US group will receive a policy update this week that does not apply to it.
-
-    required_action: >-
-      Confirm the UK position on HTS from the regulations and the consolidated
-      list rather than from the statutory guidance, which is silent. Check that
-      no UK entity has adopted a US-sourced relaxation.
+      Separately, establish whether the group sanctions policy is pegged to
+      OFAC in substance whatever it says on its face, and confirm that no EU or
+      UK entity has adopted this week's US relaxation. Diarise 1 June 2027,
+      when the EU's renewed measures expire and the three positions re-converge
+      or diverge further.
 
     status: open
     supersedes: null
