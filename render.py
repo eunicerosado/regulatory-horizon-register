@@ -80,6 +80,49 @@ def validate(item: dict, path: Path, errors: list[str]) -> None:
         errors.append(f"{path.name}:{ref} missing 'verified' (use null if unchecked)")
 
 
+def validate_cross(weeks: list[tuple[Path, dict]], errors: list[str]) -> None:
+    """Checks that need the whole register in view, not one record at a time.
+
+    `id` is the anchor the continuity chain hangs off: `supersedes` points at
+    one. A duplicate id or a dangling reference breaks that chain silently,
+    so both are errors rather than warnings.
+    """
+    origin: dict[str, str] = {}
+    status: dict[str, str] = {}
+
+    for path, data in weeks:
+        for item in data.get("items") or []:
+            ref = item.get("id")
+            if not ref:
+                continue                      # already reported as a missing field
+            if ref in origin:
+                errors.append(
+                    f"{path.name}:{ref} duplicate id - already used in {origin[ref]}"
+                )
+                continue
+            origin[ref] = path.name
+            status[ref] = item.get("status")
+
+    for path, data in weeks:
+        for item in data.get("items") or []:
+            target = item.get("supersedes")
+            if not target:
+                continue
+            ref = item.get("id", "<no id>")
+            if target == ref:
+                errors.append(f"{path.name}:{ref} supersedes itself")
+            elif target not in origin:
+                errors.append(
+                    f"{path.name}:{ref} supersedes '{target}', which is not a "
+                    "record in the register"
+                )
+            elif status[target] != "closed":
+                errors.append(
+                    f"{path.name}:{ref} supersedes '{target}', but that record is "
+                    f"still status: {status[target]} - mark the superseded record closed"
+                )
+
+
 def load() -> tuple[list[tuple[Path, dict]], list[str]]:
     weeks, errors = [], []
     for path in sorted(REGISTER.glob("*.yaml")):
@@ -91,6 +134,7 @@ def load() -> tuple[list[tuple[Path, dict]], list[str]]:
         for item in data.get("items") or []:
             validate(item, path, errors)
         weeks.append((path, data))
+    validate_cross(weeks, errors)
     return weeks, errors
 
 
