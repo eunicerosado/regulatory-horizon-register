@@ -1,0 +1,351 @@
+# RegWatch register — week ending 2026-09-14
+# Converted from the weekly brief. Facts trace to the linked primary source.
+# `verified` records the date the primary source was last re-checked.
+
+window:
+  start: 2026-09-07
+  end: 2026-09-14
+  coverage: full
+
+items:
+
+  - id: 2026-09-14-us-002
+    jurisdiction: US
+    regulator: Office of Foreign Assets Control
+    regulator_short: OFAC
+    instrument_type: sanctions_action
+    title: >-
+      OFAC moves Iran licensing to a presumption of denial, prices individual
+      liability at $1.4m, and FinCEN opens a paid Iran whistleblower channel,
+      all inside three days
+    reference: null
+    published: 2026-09-10
+    effective: null
+    deadline: null
+    deadline_type: null
+    source_url: https://ofac.treasury.gov/recent-actions/20260910
+    verified: 2026-09-14
+
+    entity_scope:
+      - all_regulated_firms
+    functions_affected:
+      - financial_crime
+      - compliance
+      - legal
+      - operations
+
+    scores:
+      actionability: 5
+      reach: 5
+
+    rationale: >-
+      Four coordinated actions under Operation Economic Outcast. On 8 September
+      FinCEN issued an alert on procurement networks supporting Iran's
+      commercial aviation sector, addressed to depository institutions, MSBs,
+      casinos, insurers, securities and futures firms, mortgage firms and
+      precious metals dealers, while OFAC sanctioned 36 linked entities and
+      individuals. On 10 September OFAC designated a further 16 individuals and
+      5 entities across Iraq, Lebanon, Syria and the UAE; moved its Iran
+      licensing policy to a presumption of denial except as required by law or
+      in narrow circumstances such as risk to life, limb or environmental
+      safety; and announced a $1,427,230 settlement with an individual, graded
+      egregious and not voluntarily self-disclosed, for conduct including
+      management consulting to an Iranian software company, receiving
+      Iranian-origin dividends into US accounts and acquiring Iranian real
+      property. FinCEN issued a whistleblower bulletin the same day. Read
+      together these are a campaign design: the licensing route that bought
+      time is shut, personal liability has a price on ordinary professional
+      conduct, and the person most likely to report a firm's Iran exposure now
+      has a financial incentive and a named channel. Continues the thread at
+      2026-08-25-us-002.
+
+    required_action: >-
+      Re-assess any strategy that depended on a pending or planned Iran
+      licence application. Review private banking and wealth books for clients
+      holding Iranian-origin assets or income, since the settlement conduct is
+      that profile rather than a sanctions-evasion network. Apply the aviation
+      procurement red flags in trade finance and aviation lending. Confirm
+      internal speak-up routes are credible enough that staff use them before
+      the external one.
+
+    status: open
+    supersedes: null
+
+  - id: 2026-09-14-us-003
+    jurisdiction: US
+    regulator: Office of Foreign Assets Control
+    regulator_short: OFAC
+    instrument_type: sanctions_action
+    title: >-
+      OFAC designates Xinbi Guarantee, the escrow marketplace behind Southeast
+      Asian scam centres, with its messaging app and crypto wallet developers
+    reference: null
+    published: 2026-09-09
+    effective: null
+    deadline: null
+    deadline_type: null
+    source_url: https://home.treasury.gov/news/press-releases/sb0624
+    verified: 2026-09-14
+
+    entity_scope:
+      - credit_institutions
+      - payment_service_providers
+      - e_money_institutions
+      - crypto_asset_service_providers
+    functions_affected:
+      - financial_crime
+      - technology
+      - data
+      - operations
+
+    scores:
+      actionability: 5
+      reach: 4
+
+    rationale: >-
+      Xinbi Guarantee, SafeW Technology Co., Ltd. (Singapore messaging app
+      developer) and Anwen Technology Co., Ltd. (Cambodia crypto wallet
+      developer) designated under EO 13581. Treasury says Xinbi has processed
+      over $24bn in digital assets and fiat since around 2022, acting as escrow
+      and marketplace for the goods and services scam operations run on. The
+      UK FCDO sanctioned Xinbi on 26 March 2026 and the DOJ Scam Center Strike
+      Force seized associated infrastructure and wallets. Los Tiguerones was
+      designated the same day and ten FAQs amended, two issued. The target is
+      infrastructure rather than perpetrators. The weakness is transmission:
+      an SDN entry is a set of names, while the exposure is blockchain
+      addresses and app publisher identities. In most firms sanctions screening
+      and crypto analytics are separate tools, owned by separate teams, and
+      never reconciled, so the designation only bites where something joins
+      them.
+
+    required_action: >-
+      Test whether a designated entity name can be turned into the addresses,
+      clusters or app publisher identities the firm would actually block, and
+      who owns that step. Check whether the blockchain analytics vendor
+      attributes these entities and whether that attribution feeds screening.
+      Review Southeast Asia correspondent and payment exposure and
+      investment-scam victim reports for the corridor.
+
+    status: open
+    supersedes: null
+
+  - id: 2026-09-14-us-001
+    jurisdiction: US
+    regulator: Financial Crimes Enforcement Network
+    regulator_short: FinCEN
+    instrument_type: supervisory_statement
+    title: >-
+      FinCEN and the federal banking agencies classify mobile driver's
+      licences as documentary ID under CIP, and put third-party digital
+      credentials on the non-documentary side
+    reference: null
+    published: 2026-09-08
+    effective: null
+    deadline: null
+    deadline_type: null
+    source_url: https://www.fincen.gov/news/news-releases/fincen-issues-frequently-asked-questions-regarding-treatment-verifiable-digital
+    verified: 2026-09-14
+
+    entity_scope:
+      - credit_institutions
+    functions_affected:
+      - onboarding
+      - financial_crime
+      - compliance
+      - technology
+
+    scores:
+      actionability: 3
+      reach: 4
+
+    rationale: >-
+      FAQs issued jointly with staff of the FRB, FDIC, NCUA and OCC - two new,
+      one updated - on state-issued mobile driver's licences and other
+      government-issued verifiable digital credentials under the Customer
+      Identification Program rule. A bank or credit union may accept them where
+      it can extract and process the information and its CIP policy allows.
+      The permission is the headline; the classification is the substance. A
+      government-issued verifiable digital credential is a documentary method.
+      An electronic credential obtained from a third party is non-documentary,
+      and a bank using that route must satisfy itself the third party applies
+      the authentication the bank itself would - which is a vendor assurance
+      programme, not a policy amendment. The fraud surface moves too: nobody
+      forges a signed credential, they obtain a genuine one in the wrong name
+      or take over the wallet holding it, so issuance and account recovery
+      become the control, and issuance sits with a state motor vehicle agency.
+      Permissive rather than mandatory, hence actionability 3.
+
+    required_action: >-
+      Before permitting digital credentials in CIP policy, map which
+      credentials will be accepted and by which route. For any third-party
+      route, scope the authentication assurance the FAQs require of the
+      provider. Ask the fraud function whether device binding and account
+      takeover signals have been re-weighted for credentials that cannot be
+      forged but can be misissued.
+
+    status: open
+    supersedes: null
+
+  - id: 2026-09-14-us-004
+    jurisdiction: US
+    regulator: Federal Trade Commission
+    regulator_short: FTC
+    instrument_type: enforcement
+    title: >-
+      FTC proposed order requires payment processor Humboldt Merchant Services
+      to pay $12m for processing shell merchants and moving them onto
+      lower-risk BINs to evade fraud monitoring
+    reference: null
+    published: 2026-09-08
+    effective: null
+    deadline: null
+    deadline_type: null
+    source_url: https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-takes-action-against-payment-processor-humboldt-merchant-services-knowingly-facilitating-payment
+    verified: 2026-09-14
+
+    entity_scope:
+      - payment_service_providers
+      - credit_institutions
+    functions_affected:
+      - financial_crime
+      - onboarding
+      - risk
+
+    scores:
+      actionability: 3
+      reach: 4
+
+    rationale: >-
+      Proposed order filed in the Eastern District of Michigan on a 2-0
+      Commission vote, subject to court approval. The FTC alleges Humboldt
+      processed for more than 1,000 shell merchant accounts fronting scam
+      operations despite chargeback rates roughly ten times industry norms, and
+      deliberately placed risky accounts on lower-risk bank identification
+      numbers to evade card-network fraud monitoring. The order requires $12m
+      in consumer redress and permanently bans credit card laundering, load
+      balancing to evade monitoring, and processing for four merchant
+      categories including straw companies and MATCH-listed merchants. The
+      distinction that matters is monitoring evasion rather than monitoring
+      failure - a control that worked and was routed around - and that is what
+      draws permanent conduct bans rather than remediation. For sponsor banks
+      and firms upstream, "our processor is regulated" describes a status, not
+      a control. Scored consistently with the FTC Doxo record at
+      2026-08-23-us-001.
+
+    required_action: >-
+      Request chargeback distribution by BIN from processors in the chain, and
+      establish whether anyone internally can produce or interpret it. Check
+      whether merchant underwriting for sponsored relationships is assured
+      independently or relied on as reported by the processor.
+
+    status: open
+    supersedes: null
+
+  - id: 2026-09-14-uk-001
+    jurisdiction: UK
+    regulator: Foreign, Commonwealth and Development Office
+    regulator_short: FCDO
+    instrument_type: guidelines
+    title: >-
+      UK statutory guidance on the Iran sanctions regime rewritten for the Iran
+      (Sanctions) (Amendments) Regulations 2026, a day before OFAC tightened
+      Iran licensing
+    reference: Iran (Sanctions) (Amendments) Regulations 2026
+    published: 2026-09-09
+    effective: null
+    deadline: null
+    deadline_type: null
+    source_url: https://www.gov.uk/government/publications/iran-sanctions-guidance
+    verified: 2026-09-14
+
+    entity_scope:
+      - all_regulated_firms
+    functions_affected:
+      - financial_crime
+      - compliance
+      - legal
+
+    scores:
+      actionability: 3
+      reach: 3
+
+    rationale: >-
+      Updated statutory guidance covering designated persons and the asset
+      freeze, internal repression goods, interception and monitoring
+      technology, and strategically important goods, with the financial
+      services and brokering prohibitions attached to each. OFSI amended its
+      supplementary licensing guidance on permitted travel expenses the next
+      day. Statutory guidance is what a court and a supervisor read when
+      judging whether controls were reasonable, so an amendment to reflect a
+      new statutory instrument moves the baseline - and a procedure that links
+      to the guidance rather than restating it has changed underneath its
+      owners without notice. The timing matters for firms on both sides of the
+      Atlantic: the UK refreshed its Iran framework on 9 September and OFAC
+      moved to a presumption of denial on 10 September (2026-09-14-us-002). A
+      compliance model built on assumed UK-US divergence misprices a week in
+      which, on Iran, they converged. The OFSI organisation page also lists
+      "Iran nuclear sanctions: guidance" under 9 September, but that
+      publication page shows a last update of 1 May 2026; not relied on.
+
+    required_action: >-
+      Re-read the Iran procedures that cite this guidance by link and confirm
+      they still reflect it. For firms with UK and US nexus, check whether Iran
+      controls assume divergent regimes and whether that assumption still
+      holds. Review live or planned OFSI licence applications against the
+      amended supplementary guidance.
+
+    status: open
+    supersedes: null
+
+  - id: 2026-09-14-eu-001
+    jurisdiction: EU
+    regulator: Anti-Money Laundering Authority
+    regulator_short: AMLA
+    instrument_type: consultation_paper
+    title: >-
+      AMLA consults on a common EU format for suspicious transaction reports
+      and transaction-record requests, closing 20 September
+    reference: Article 69(3), Regulation (EU) 2024/1624
+    published: 2026-07-02
+    effective: null
+    deadline: 2026-09-20
+    deadline_type: consultation_close
+    source_url: https://www.amla.europa.eu/policy/public-consultations/consultation-draft-its-format-reporting-suspicions-and-providing-transaction-records_en
+    verified: 2026-09-14
+
+    entity_scope:
+      - all_regulated_firms
+      - designated_non_financial_businesses
+    functions_affected:
+      - financial_crime
+      - technology
+      - data
+
+    scores:
+      actionability: 2
+      reach: 5
+
+    rationale: >-
+      Draft Implementing Technical Standards under Article 69(3) AMLR setting
+      a common format for reporting suspicions - with templates adapted to
+      different types of obliged entity - and separate templates for credit
+      and financial institutions providing transaction records to FIUs. Opened
+      2 July; public hearing held 9 September; closes 20 September 2026 at
+      23:59 CEST. Recorded this week because the hearing fell in the window,
+      although publication pre-dates it. A common format makes reporting
+      quality comparable across 27 FIUs for the first time, removing the cover
+      that narrative quality has given weak reports. The transaction-record
+      template is the sharper end: it standardises what an FIU can demand and
+      how fast, which turns a question of willingness into one of data
+      architecture. Firms that file by system integration will implement the
+      template directly, so the mapping work lands in engineering rather than
+      compliance.
+
+    required_action: >-
+      Respond by 20 September 2026, 23:59 CEST, if at all. Independently of
+      the response, test whether transaction records could be produced from
+      core systems in the draft template's structure, and who would do the
+      mapping.
+
+    status: open
+    supersedes: null

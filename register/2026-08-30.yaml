@@ -123,7 +123,7 @@ items:
       Treat this as the third occurrence, not an isolated one.
 
     status: open
-    supersedes: null
+    supersedes: 2026-08-23-us-002
 
   - id: 2026-08-30-us-001
     jurisdiction: US
