@@ -74,5 +74,5 @@ interesting.
 ## `regulator_short`
 
 **EU** — `EC`, `EBA`, `ESMA`, `EIOPA`, `ECB`, `AMLA`, `EDPB`
-**UK** — `FCA`, `PRA`, `BoE`, `HMT`, `OFSI`, `NCA`, `ICO`, `PSR`
-**US** — `FinCEN`, `OFAC`, `OCC`, `CFPB`, `FRB`, `FDIC`, `SEC`, `CFTC`, `NYDFS`, `DOJ`
+**UK** — `FCA`, `PRA`, `BoE`, `HMT`, `OFSI`, `FCDO`, `NCA`, `ICO`, `PSR`
+**US** — `FinCEN`, `OFAC`, `OCC`, `CFPB`, `FRB`, `FDIC`, `SEC`, `CFTC`, `NYDFS`, `DOJ`, `FTC`
