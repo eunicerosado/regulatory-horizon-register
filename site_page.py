@@ -120,7 +120,10 @@ def render_index(weeks, materiality) -> str:
     top.sort(key=lambda i: (-materiality(i), i["published"]))
     top = top[:MAX_ENTRIES]
 
-    last = max((i["published"] for i in items), default=dt.date.today())
+    last = max(
+        (d["window"]["end"] for _, d in weeks if (d.get("window") or {}).get("end")),
+        default=dt.date.today(),
+    )
     jurisdictions = sorted({i["jurisdiction"] for i in items}) or ["EU", "UK", "US"]
 
     rows = []
