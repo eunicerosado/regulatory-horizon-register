@@ -1,10 +1,9 @@
 # Deadlines
 
-Open items falling due in the next 60 days, as at 2026-09-29.
+Open items falling due in the next 60 days, as at 2026-09-30.
 
 | Date | Days | Jur. | Regulator | What | Type | Materiality |
 |------|------|------|-----------|------|------|-------------|
-| 2026-09-29 | 0 | UK | FCDO | [Iran (Sanctions) (Amendment) Regulations 2026 take effect...](https://www.gov.uk/government/publications/notice-to-exporters-202618-iran-sanctions-amendments-effective-from-29-september-2026/nte-202618-iran-sanctions-amendments-effective-from-29-september-2026) | compliance date | High |
-| 2026-10-06 | 7 | EU | AMLA | [AMLA consults on draft RTS on cross-border information ex...](https://www.amla.europa.eu/policy/public-consultations) | consultation close | Low |
-| 2026-10-12 | 13 | EU | ESMA | [ESMA consults on the reporting framework for clearing act...](https://www.esma.europa.eu/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country) | consultation close | Low |
-| 2026-11-01 | 33 | EU | Council | [EU customs reform adopted - the sub-EUR 150 duty exemptio...](https://www.consilium.europa.eu/en/press/press-releases/2026/09/03/eu-customs-council-greenlights-landmark-reform/) | application date | Medium |
+| 2026-10-06 | 6 | EU | AMLA | [AMLA consults on draft RTS on cross-border information ex...](https://www.amla.europa.eu/policy/public-consultations) | consultation close | Low |
+| 2026-10-12 | 12 | EU | ESMA | [ESMA consults on the reporting framework for clearing act...](https://www.esma.europa.eu/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country) | consultation close | Low |
+| 2026-11-01 | 32 | EU | Council | [EU customs reform adopted - the sub-EUR 150 duty exemptio...](https://www.consilium.europa.eu/en/press/press-releases/2026/09/03/eu-customs-council-greenlights-landmark-reform/) | application date | Medium |
