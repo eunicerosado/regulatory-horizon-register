@@ -16,7 +16,7 @@ week after week are worth more than five that drift.
 | Score | Meaning |
 |-------|---------|
 | 5 | Binding obligation with a dated deadline. Systems, policy or reporting must change. |
-| 4 | Binding, but the implementation window is long or the change is contained to one function. |
+| 4 | Binding, but the implementation window is long or the change is contained to one function. Also covers text that is final and carries a defined application period, where only formal adoption or commencement is outstanding. |
 | 3 | Supervisory expectation rather than rule change — firms are expected to be able to evidence a position. |
 | 2 | Direction of travel is now visible. No action required, but planning assumptions should move. |
 | 1 | Informational. Enforcement outcome, statistics, or restatement of existing obligations. |
@@ -74,3 +74,12 @@ freely available primary sources. It is not exhaustive, it is not legal
 advice, and it should not be relied on as a compliance control. Items are
 recorded as published; nothing here is an assurance that a firm's own
 obligations have been correctly identified.
+
+---
+
+## Amendments
+
+2026-10-06 — Actionability level 4 extended to cover final text awaiting
+formal adoption or commencement, where the application period is defined.
+Records scored before this date were scored under the narrower reading, in
+which level 4 required the obligation to be in force.
