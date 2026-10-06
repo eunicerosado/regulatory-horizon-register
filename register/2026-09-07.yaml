@@ -286,16 +286,16 @@ items:
     regulator_short: Council
     instrument_type: legislation
     title: >-
-      EU customs reform adopted - the sub-EUR 150 duty exemption goes,
-      non-EU e-commerce platforms become the importer, and a single customs
-      data hub is created
+      EU small-parcel handling fee to be introduced by 1 November 2026, as the
+      Council gives final approval to the customs reform making non-EU
+      e-commerce platforms the importer and creating a single customs data hub
     reference: null
     published: 2026-09-03
     effective: null
     deadline: 2026-11-01
     deadline_type: application_date
     source_url: https://www.consilium.europa.eu/en/press/press-releases/2026/09/03/eu-customs-council-greenlights-landmark-reform/
-    verified: 2026-09-07
+    verified: 2026-10-06
 
     entity_scope:
       - credit_institutions
@@ -310,15 +310,19 @@ items:
 
     rationale: >-
       Final Council approval of the customs overhaul. It creates an EU Customs
-      Authority in Lille, operating from 2027, and an EU Customs Data Hub that
-      will risk-score consignments. The duty exemption for imports under EUR
-      150 is removed and an EU-wide handling fee on small parcels is to be
+      Authority in Lille, beginning operations in 2027, and an EU customs data
+      hub that the Council says will help member states identify the riskiest
+      cargo for inspection. An EU-wide handling fee on small parcels is to be
       introduced by 1 November 2026 - the deadline field records that date,
-      which the Council gives as "by". Non-EU e-commerce platforms are treated
-      as the importer and made responsible for customs compliance, with
-      penalties of up to 6% of annual import value. Hub use becomes mandatory
-      for e-commerce businesses from 1 July 2028 and for all traders from 1
-      March 2034. The direct obligations fall on platforms and importers, a
+      which the Council gives as "by". The page describes the removal of the
+      duty exemption for imports under EUR 150 as a separate, earlier Council
+      decision and gives no date for it, so none is recorded here; an earlier
+      version of this title implied the exemption ended on 1 November 2026,
+      which the page does not support, and was corrected on 2026-10-06.
+      Non-EU e-commerce platforms are considered the importer when selling
+      into the EU, with fines of up to 6% of the company's annual import value
+      in the preceding year. Hub use becomes mandatory for e-commerce
+      businesses on 1 July 2028 and for all traders from 1 March 2034. The direct obligations fall on platforms and importers, a
       population outside the register's usual perimeter; the entity scope
       records the financial firms that feel it. For them this is a financial
       crime item: undervaluation of low-value consignments has been a durable
