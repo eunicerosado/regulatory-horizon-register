@@ -433,7 +433,7 @@ items:
       - technology
 
     scores:
-      actionability: 3
+      actionability: 2
       reach: 5
 
     rationale: >-
@@ -450,15 +450,15 @@ items:
       notification requirement. Six Sub-Agents are named: Galadriel Trading
       FZCO, Gimli Trade LLC-FZ, Hydrofusion Resources FZ-LLC, Pearl Bridge,
       Power Sphere LLC-FZ and Sigizmund FZCO. The measure is not in force, so
-      actionability is scored 3 rather than 5 — firms are expected to be able
-      to evidence a position, including on the notification duty, which most
-      payment operations have never built as an evidenced workflow. Reach is
-      scored 5 because covered financial institutions span banks, money
-      services businesses and virtual asset firms rather than one licence
-      category. Note the divergence worth publishing: the 6 October edition
-      treated the A7 action as the most consequential item of the week on
-      editorial judgment, while the rubric bands it Medium because the
-      prohibition is proposed rather than binding.
+      actionability is scored 2: under rubric.md a proposed rule is direction
+      of travel, and the immediate screening action belongs to the alert
+      recorded at 2026-10-06-us-002 rather than to the proposal. That aligns
+      it with the SEC custody proposal at 2026-10-06-us-003 and the FTC
+      impersonation proposal at 2026-09-28-us-001, both scored 2. The
+      planning point is the notification duty, which most payment operations
+      have never built as an evidenced workflow. Reach is scored 5 because
+      covered financial institutions span banks, money services businesses
+      and virtual asset firms rather than one licence category.
 
     required_action: >-
       Screen for the six named Sub-Agents and any account or convertible
