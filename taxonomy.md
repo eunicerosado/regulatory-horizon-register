@@ -18,6 +18,7 @@ Values are `snake_case`. Add new terms here before using them in a record.
 | `guidelines` | EBA/ESMA Guidelines | FCA/PRA guidance | Interagency guidance |
 | `rule_final` | Delegated Act | Policy Statement (PS) | Final Rule |
 | `rule_proposed` | Draft Delegated Act | Consultation Paper (CP) | Notice of Proposed Rulemaking (NPRM) |
+| `rule_withdrawn` | Withdrawal of a Commission proposal | Revocation, withdrawn proposal | Withdrawal of proposed rule, Rescission |
 | `consultation_paper` | Consultation / Call for Advice | Consultation Paper (CP) | Request for Information / ANPR |
 | `supervisory_statement` | Opinion, Q&A | Dear CEO letter, SS, Market Watch | Bulletin, Supervisory Letter, Circular |
 | `enforcement` | National authority decision | Final Notice | Consent Order, Civil Money Penalty |
@@ -30,6 +31,13 @@ both sit under `supervisory_statement`, but the first is a targeted
 supervisory communication and the second is general guidance to the
 regulated population. Where the distinction matters to the obligation, say
 so in `rationale` rather than forcing the label.
+
+**`rule_withdrawn`** records a proposed or final rule being withdrawn,
+rescinded or revoked. It is a direction-of-travel signal in its own right, and
+recording it as `rule_proposed` would misstate that direction.
+
+*Amended 2026-10-13 — `rule_withdrawn` added. `2026-10-12-us-002` is the first
+record to use it.*
 
 ---
 
