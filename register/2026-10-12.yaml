@@ -24,12 +24,9 @@ window:
     25 October 2027 — because they carry different obligations and different
     dates. That instrument is out of window and was not briefed, but the
     edition carried both dates in prose, and a dated obligation held only in
-    prose never reaches the generated calendar. Its commencement dates and the
-    text of regulation 34A were read on legislation.gov.uk on 2026-10-13; the
-    made and laid dates were not stated on either the draft page or the made
-    instrument's note page, so no made date is recorded and `published` carries
-    the legislation.gov.uk last-modified date instead, flagged in the rationale
-    of both records. Deliberate omission: OFSI added FAQ 205, "What happens to
+    prose never reaches the generated calendar. Its made date of 9 June 2026,
+    its commencement provisions and the text of regulation 34A were read on the
+    made instrument on legislation.gov.uk on 2026-10-13. Deliberate omission: OFSI added FAQ 205, "What happens to
     specific licences when a designated person is delisted?", on 9 October 2026
     per the publication's change log. It is squarely in the lane and follows the
     frozen asset review at 2026-10-06-uk-002, but only the title could be read
@@ -62,11 +59,11 @@ items:
     reference: >-
       Money Laundering and Terrorist Financing (Amendment) Regulations 2026,
       S.I. 2026/621, regulation 20 inserting regulation 34A into S.I. 2017/692
-    published: 2026-07-21
+    published: 2026-06-09
     effective: 2027-02-01
     deadline: 2027-02-01
     deadline_type: compliance_date
-    source_url: https://www.legislation.gov.uk/ukdsi/2026/9780348281743
+    source_url: https://www.legislation.gov.uk/uksi/2026/621/made
     verified: 2026-10-13
 
     entity_scope:
@@ -115,18 +112,14 @@ items:
       new ones, so a relationship already on the book must be assessed rather
       than grandfathered. Recorded out of window deliberately: the instrument
       is not new, but the 1 February 2027 date was carried only in the
-      12 October edition's prose and belongs in the calendar. Honest caveat on
-      the dates: the commencement provisions and the text of regulation 34A
-      were read on the draft instrument page on legislation.gov.uk on
-      2026-10-13, which records that the draft was made as S.I. 2026 No. 621,
-      and the made instrument's note page gives S.I. 2026/621 with a
-      last-modified date and correction slip of 21 July 2026. Neither page
-      stated the made or laid date, so no made date is recorded and
-      `published` carries the 21 July 2026 legislation.gov.uk date instead.
-      The 1 February 2027 date is stated expressly in regulation 1(4) and does
-      not depend on the made date; the default 21-day commencement in
-      regulation 1(2) does, and is therefore not recorded. Continues the
-      cryptoasset thread at 2026-10-06-uk-001.
+      12 October edition's prose and belongs in the calendar. The instrument
+      was made on 9 June 2026, as stated in its header and signature block on
+      the made instrument page on legislation.gov.uk, read on 2026-10-13;
+      `published` records that date. The 1 February 2027 date is stated
+      expressly in regulation 1(4). The default commencement in regulation
+      1(2), 21 days after the day the Regulations were made, governs the
+      instrument's other provisions and is not this record's obligation.
+      Continues the cryptoasset thread at 2026-10-06-uk-001.
 
     required_action: >-
       Cryptoasset exchange providers and custodian wallet providers: identify
@@ -157,11 +150,11 @@ items:
     reference: >-
       Money Laundering and Terrorist Financing (Amendment) Regulations 2026,
       S.I. 2026/621, regulation 37 substituting Schedule 6B to S.I. 2017/692
-    published: 2026-07-21
+    published: 2026-06-09
     effective: 2027-10-25
     deadline: 2027-10-25
     deadline_type: application_date
-    source_url: https://www.legislation.gov.uk/ukdsi/2026/9780348281743
+    source_url: https://www.legislation.gov.uk/uksi/2026/621/made
     verified: 2026-10-13
 
     entity_scope:
@@ -191,16 +184,16 @@ items:
       scored 4 rather than 5 because the obligation is binding with a dated
       application but is contained to the legal and corporate governance
       function rather than requiring systems or monitoring change, which is
-      the level 4 reading in rubric.md as amended on 2026-10-06. Reach is 4
+      the one-function limb of level 4 in rubric.md; the dated application
+      awaiting commencement also fits the limb added on 2026-10-06. Reach is 4
       because it attaches to a defined licence category. The partial
       commencement is the trap: part of the new Schedule is already live and
       part is not, so a change-in-control question asked in 2027 has two
-      possible answers depending on which paragraph it turns on, and the
-      21-day limb cannot be dated from the pages read. Same dating caveat as
-      2026-10-12-uk-001: the made and laid dates were not stated on either
-      page read, so `published` carries the legislation.gov.uk last-modified
-      date of 21 July 2026 and the 21-day commencement is not recorded.
-      Continues the thread at 2026-10-06-uk-001.
+      possible answers depending on which paragraph it turns on. The
+      instrument was made on 9 June 2026, read on the made instrument page on
+      2026-10-13, so the 21-day limb fell 21 days after that date, at the end
+      of June 2026, and is already in force. Continues the thread at
+      2026-10-06-uk-001.
 
     required_action: >-
       Registered cryptoasset businesses and their advisers: read the
@@ -619,7 +612,7 @@ items:
     jurisdiction: US
     regulator: Financial Crimes Enforcement Network
     regulator_short: FinCEN
-    instrument_type: rule_proposed
+    instrument_type: rule_withdrawn
     title: >-
       FinCEN withdraws both outstanding digital asset proposals — the
       recordkeeping and reporting rule for convertible virtual currency
@@ -682,12 +675,12 @@ items:
       retreat: the A7 Network special measure proposal published 5 October is
       still live, so class-based rules are giving way to named-target
       measures, which moves the burden from building a control once to
-      absorbing designations continuously. Instrument type flags a taxonomy
-      gap: taxonomy.md has no value for a withdrawal or rescission.
-      rule_proposed is recorded as least-wrong because the artefacts are
-      Federal Register proposed-rule documents, but it misstates the
-      direction. See the handoff prompt — this needs a taxonomy decision
-      rather than a silent bend. Continues the thread at 2026-10-06-us-001.
+      absorbing designations continuously. Instrument type is recorded as
+      rule_withdrawn, added to taxonomy.md on 2026-10-13 for this record:
+      the artefacts are Federal Register documents withdrawing proposed
+      rules, and recording them as rule_proposed would have misstated the
+      direction of travel, which is the point of the item. Continues the
+      thread at 2026-10-06-us-001.
 
     required_action: >-
       Firms with crypto exposure: restate the firm's own position on
@@ -771,12 +764,13 @@ items:
       Digital-infrastructure takedowns have a detection consequence: when
       infrastructure is seized mid-scheme, inbound mule flow stops abruptly
       rather than tapering, which is observable for a firm looking for it.
-      Instrument type flags a taxonomy gap: taxonomy.md has no value for a
-      prosecution or enforcement-policy directive from a prosecuting
-      authority. supervisory_statement is recorded as least-wrong because it
-      is an authority's published statement of its own approach, but the US
-      column describes bulletins and supervisory letters from a regulator, and
-      DOJ is not one. See the handoff prompt.
+      Instrument type is recorded as supervisory_statement, the house answer
+      for a DOJ statement of its own approach, consistent with
+      2026-08-25-us-003. DOJ is a prosecuting authority rather than a
+      supervisor, so the label is a fit by function — an authority's
+      published statement of how it will act — rather than by form; per the
+      non-equivalence note in taxonomy.md the distinction is stated here
+      rather than forced into a new value.
 
     required_action: >-
       US institutions: name the owner of the legal-process workflow end to
