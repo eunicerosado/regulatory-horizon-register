@@ -40,7 +40,7 @@ items:
     published: 2026-09-30
     effective: 2027-10-25
     deadline: 2027-02-28
-    deadline_type: reporting_date
+    deadline_type: submission_due
     source_url: https://www.fca.org.uk/news/press-releases/fca-opens-gateway-regulated-crypto
     verified: 2026-10-06
 
@@ -80,8 +80,11 @@ items:
       regime already made in final form; the artefact itself is the FCA's
       announcement that the gateway is open, not a new rule, and the page
       frames the date as one by which firms intending to continue operating
-      should apply. The deadline is recorded as reporting_date because it is
-      a submission falling due; the instrument applies on 25 October 2027.
+      should apply. The deadline is recorded as submission_due because it is a
+      one-off authorisation application falling due rather than a periodic
+      return; the instrument applies on 25 October 2027. Recorded as
+      reporting_date when this record was written on 2026-10-06 and moved onto
+      submission_due on 2026-10-13, when that value was added to taxonomy.md.
       Continues the thread at 2026-09-23-uk-001.
 
     required_action: >-
@@ -461,12 +464,12 @@ items:
       and virtual asset firms rather than one licence category.
 
     required_action: >-
-      Screen for the six named Sub-Agents and any account or convertible
-      virtual currency address administered on their behalf. Determine whether
-      a declined-transmittal notification workflow exists and is evidenced,
-      and whether it could be built to the proposed standard. Consider
-      responding by 4 November 2026 on the operational cost of the
-      notification and documentation requirements.
+      Determine whether a declined-transmittal notification workflow exists and
+      is evidenced, and whether it could be built to the proposed standard.
+      Consider responding by 4 November 2026 on the operational cost of the
+      notification and documentation requirements. Screening for the named
+      Sub-Agents is the companion alert's action and sits at
+      2026-10-06-us-002, not here.
 
     status: open
     supersedes: null
@@ -532,13 +535,17 @@ items:
       detects an agency chain is competent document review.
 
     required_action: >-
-      Circulate the alert's red flags to trade finance document review,
-      payment operations and blockchain analytics, and confirm the three
-      groups are reflected in monitoring and in reviewer guidance rather than
-      only in name screening. Use the key term FIN-2026-A7NETWORK in field 2
-      and in the narrative of any related SAR. Check whether blockchain
-      analytics and sanctions screening sit in separate queues with separate
-      owners, which is where this typology falls between controls.
+      Screen for the six named Sub-Agents — Galadriel Trading FZCO, Gimli Trade
+      LLC-FZ, Hydrofusion Resources FZ-LLC, Pearl Bridge, Power Sphere LLC-FZ
+      and Sigizmund FZCO — and any account or convertible virtual currency
+      address administered by or on their behalf. Circulate the alert's red
+      flags to trade finance document review, payment operations and blockchain
+      analytics, and confirm the three groups are reflected in monitoring and in
+      reviewer guidance rather than only in name screening. Use the key term
+      FIN-2026-A7NETWORK in field 2 and in the narrative of any related SAR.
+      Check whether blockchain analytics and sanctions screening sit in separate
+      queues with separate owners, which is where this typology falls between
+      controls.
 
     status: open
     supersedes: null
