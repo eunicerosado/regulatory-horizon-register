@@ -535,10 +535,13 @@ items:
       detects an agency chain is competent document review.
 
     required_action: >-
-      Screen for the six named Sub-Agents — Galadriel Trading FZCO, Gimli Trade
-      LLC-FZ, Hydrofusion Resources FZ-LLC, Pearl Bridge, Power Sphere LLC-FZ
-      and Sigizmund FZCO — and any account or convertible virtual currency
-      address administered by or on their behalf. Circulate the alert's red
+      Screen for the six Sub-Agents named in FinCEN's proposed special measure
+      at 2026-10-06-us-001 — Galadriel Trading FZCO, Gimli Trade LLC-FZ,
+      Hydrofusion Resources FZ-LLC, Pearl Bridge, Power Sphere LLC-FZ and
+      Sigizmund FZCO — and any account or convertible virtual currency address
+      administered by or on their behalf; the alert does not list them itself,
+      but treats transactions with suspected or identified A7 Network
+      Sub-Agents as a red flag. Circulate the alert's red
       flags to trade finance document review, payment operations and blockchain
       analytics, and confirm the three groups are reflected in monitoring and in
       reviewer guidance rather than only in name screening. Use the key term
