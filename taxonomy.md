@@ -41,8 +41,24 @@ so in `rationale` rather than forcing the label.
 | `compliance_date` | Obligation bites; firms must be compliant. |
 | `application_date` | Instrument applies, possibly with transitional relief. |
 | `transposition` | EU only — member states must have implemented. |
-| `reporting_date` | A submission or return falls due. |
+| `reporting_date` | A periodic submission or return falls due. |
+| `submission_due` | A one-off application or submission must be filed by this date. |
 | `expiry` | A licence, exemption or general licence lapses. |
+
+**`reporting_date` or `submission_due`.** Both are dates by which a firm must
+file something, and before 2026-10-13 both were recorded as `reporting_date`.
+They are separated because the consequence of missing them differs: a periodic
+return filed late is a reporting breach, whereas a one-off application filed
+late can cost the right to carry on the activity. An annual frozen asset review
+is `reporting_date`; an authorisation gateway application is `submission_due`.
+Neither covers the date an instrument starts to apply — that is
+`application_date`, even where the instrument introduces a charge or a duty that
+someone must then pay or perform.
+
+*Amended 2026-10-13 — `submission_due` added and `reporting_date` narrowed to
+periodic filings. `2026-10-06-uk-001` was moved onto the new value. Records
+written before this date recorded one-off application deadlines as
+`reporting_date`.*
 
 ---
 
