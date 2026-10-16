@@ -144,7 +144,7 @@ definitions in [`rubric.md`](rubric.md).
 | Score | Actionability | Reach |
 |-------|---------------|-------|
 | 5 | Binding, dated deadline. Systems or policy must change. | Cross-sector, or a whole major sector. |
-| 4 | Binding, but long window or one function. | A defined sector or licence category. |
+| 4 | Binding, but long window or one function; also final text awaiting adoption or commencement. | A defined sector or licence category. |
 | 3 | Supervisory expectation. Must evidence a position. | A sub-population — threshold, model, product. |
 | 2 | Direction of travel. Planning assumptions move. | Narrow. A handful of firms. |
 | 1 | Informational. Enforcement outcome or restatement. | Firm-specific. |
