@@ -21,6 +21,14 @@ week after week are worth more than five that drift.
 | 2 | Direction of travel is now visible. No action required, but planning assumptions should move. |
 | 1 | Informational. Enforcement outcome, statistics, or restatement of existing obligations. |
 
+**Enforcement actions.** Level 1 covers an enforcement outcome read as news: the
+respondent is penalised and nothing generalises. Where the action establishes or
+prices a supervisory expectation that other firms should now be able to evidence
+a position on, it scores 3 — the published failure is the expectation. Where the
+lesson is real but confined to a narrow population or activity, 2. The test is
+whether a firm outside the matter has something to do differently, not the size
+of the penalty.
+
 ## Axis 2 — Reach
 
 *How much of the regulated population does it touch?*
@@ -83,3 +91,9 @@ obligations have been correctly identified.
 formal adoption or commencement, where the application period is defined.
 Records scored before this date were scored under the narrower reading, in
 which level 4 required the obligation to be in force.
+
+2026-10-16 — Actionability guidance added for enforcement actions, recording the
+practice applied since the register opened: an enforcement outcome that
+establishes a generalisable supervisory expectation scores 3, a narrow one 2, and
+one that generalises not at all 1. No existing record was rescored; the guidance
+describes what the scores already reflect.
