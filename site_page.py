@@ -21,7 +21,22 @@ CV_PATH = ""  # no CV published
 
 REPO = "https://github.com/eunicerosado/regulatory-horizon-register"
 
-MAX_ENTRIES = 6
+# The page shows two sections, each capped separately.
+#
+#   Latest sweep — every record from the most recent window, so the newest work
+#                  always reaches the page. Four slots: one reserved for each
+#                  jurisdiction that reported, then filled by materiality.
+#   Still live   — open records from earlier weeks whose deadline has not yet
+#                  passed. Four slots, by materiality.
+#
+# Before 2026-10-16 the page drew six entries from the whole register with ties
+# broken oldest-first, so a new record could only appear by beating an incumbent
+# outright. The page was effectively frozen while "last updated" kept moving,
+# which is misleading on a site about currency. Ties now break newest-first, and
+# an item with no deadline leaves the page once its week is no longer the latest
+# — which is the honest behaviour for a horizon register.
+LATEST_ENTRIES = 4
+STILL_LIVE_ENTRIES = 4
 
 # True = only records whose primary source has been re-checked appear here.
 VERIFIED_ONLY = False
@@ -67,6 +82,9 @@ h2{font-size:12px; margin:0 0 14px; font-weight:400; color:var(--muted)}
 .gauge i{display:block; width:6px; height:3px; background:#DFE3E6}
 .gauge i.on{background:currentColor}
 .unver{color:var(--muted); border:1px solid var(--rule); padding:1px 5px; border-radius:2px}
+.due{color:var(--high); font-weight:500}
+h2+.entries{margin-bottom:0}
+.entries+h2{margin-top:44px}
 .gauge.high{color:var(--high)}
 .gauge.low{color:var(--low)}
 .links{margin:52px 0 0; padding:0; list-style:none; display:flex; flex-wrap:wrap; gap:8px 26px}
@@ -94,54 +112,35 @@ def _band(score: float) -> tuple[str, str]:
     return "Low", "low"
 
 
-def render_index(weeks, materiality) -> str:
-    items = [
-        i for _, d in weeks for i in (d.get("items") or [])
-        if i.get("status") == "open"
-    ]
-    if VERIFIED_ONLY:
-        items = [i for i in items if i.get("verified")]
+def _as_date(value) -> dt.date | None:
+    """Register dates arrive as date objects from YAML, but tolerate strings."""
+    if isinstance(value, dt.date):
+        return value
+    if not value:
+        return None
+    try:
+        return dt.date.fromisoformat(str(value))
+    except ValueError:
+        return None
 
-    items.sort(key=lambda i: (-materiality(i), i["published"]))
 
-    # Reserve one slot for the strongest item in each jurisdiction before
-    # filling by materiality. The page claims three jurisdictions; it should
-    # not then show six items from one.
-    top, seen = [], set()
-    for item in items:
-        if item["jurisdiction"] not in seen:
-            top.append(item)
-            seen.add(item["jurisdiction"])
-    for item in items:
-        if len(top) >= MAX_ENTRIES:
-            break
-        if item not in top:
-            top.append(item)
-    top.sort(key=lambda i: (-materiality(i), i["published"]))
-    top = top[:MAX_ENTRIES]
-
-    last = max(
-        (d["window"]["end"] for _, d in weeks if (d.get("window") or {}).get("end")),
-        default=dt.date.today(),
+def _entry(item, n: int, materiality, due: dt.date | None = None) -> str:
+    """One linked row. `due` adds the deadline to the meta line."""
+    label, cls = _band(materiality(item))
+    act = item["scores"]["actionability"]
+    rch = item["scores"]["reach"]
+    cells = lambda count: "".join(
+        f'<i class="{"on" if k < count else ""}"></i>' for k in range(5)
     )
-    jurisdictions = sorted({i["jurisdiction"] for i in items}) or ["EU", "UK", "US"]
+    flag = "" if item.get("verified") else '<span class="unver">unverified</span>'
+    due_cell = f'\n          <span class="due">due {due}</span>' if due else ""
 
-    rows = []
-    for n, item in enumerate(top):
-        label, cls = _band(materiality(item))
-        act = item["scores"]["actionability"]
-        rch = item["scores"]["reach"]
-        cells = lambda n: "".join(
-            f'<i class="{"on" if k < n else ""}"></i>' for k in range(5)
-        )
-        flag = "" if item.get("verified") else '<span class="unver">unverified</span>'
-
-        rows.append(f"""      <a class="entry" href="{html.escape(item['source_url'])}"
+    return f"""      <a class="entry" href="{html.escape(item['source_url'])}"
          style="--d:{0.04 * n:.2f}s" rel="noopener">
         <span class="meta mono">
           <span>{item['published']}</span>
           <span>{html.escape(item['jurisdiction'])} · {html.escape(item['regulator_short'])}</span>
-          <span class="band {cls}">{label}</span>
+          <span class="band {cls}">{label}</span>{due_cell}
           {flag}
           <span class="gauge {cls}" role="img" aria-label="Actionability {act} of 5, reach {rch} of 5">
             <span class="g">{cells(act)}</span>
@@ -149,7 +148,91 @@ def render_index(weeks, materiality) -> str:
           </span>
         </span>
         <span class="title">{html.escape(' '.join(item['title'].split()))}</span>
-      </a>""")
+      </a>"""
+
+
+def render_index(weeks, materiality) -> str:
+    today = dt.date.today()
+
+    open_items, latest_pool = [], []
+    last = max(
+        (d["window"]["end"] for _, d in weeks if (d.get("window") or {}).get("end")),
+        default=today,
+    )
+    for _, d in weeks:
+        end = (d.get("window") or {}).get("end")
+        for item in (d.get("items") or []):
+            if item.get("status") != "open":
+                continue
+            if VERIFIED_ONLY and not item.get("verified"):
+                continue
+            open_items.append(item)
+            if end == last:
+                latest_pool.append(item)
+
+    # Materiality first, then newest first. The second term is what stops the
+    # page freezing: on a tie the more recent record wins, where it used to lose.
+    def rank(item):
+        pub = _as_date(item.get("published"))
+        return (-materiality(item), -(pub.toordinal() if pub else 0))
+
+    open_items.sort(key=rank)
+    latest_pool.sort(key=rank)
+
+    # Reserve one slot for the strongest item in each jurisdiction that reported
+    # this week before filling by materiality. The page claims three
+    # jurisdictions; it should not then show four items from one.
+    latest, seen = [], set()
+    for item in latest_pool:
+        if item["jurisdiction"] not in seen:
+            latest.append(item)
+            seen.add(item["jurisdiction"])
+    for item in latest_pool:
+        if len(latest) >= LATEST_ENTRIES:
+            break
+        if item not in latest:
+            latest.append(item)
+    latest.sort(key=rank)
+    latest = latest[:LATEST_ENTRIES]
+
+    # Still live: anything not already shown whose deadline is still ahead.
+    shown = {id(i) for i in latest}
+    still_live = [
+        i for i in open_items
+        if id(i) not in shown
+        and (_as_date(i.get("deadline")) or dt.date.min) >= today
+    ][:STILL_LIVE_ENTRIES]
+
+    jurisdictions = sorted({i["jurisdiction"] for i in open_items}) or ["EU", "UK", "US"]
+
+    n = 0
+    sections = []
+    if latest:
+        rows = []
+        for item in latest:
+            due = _as_date(item.get("deadline"))
+            rows.append(_entry(item, n, materiality, due=due if due and due >= today else None))
+            n += 1
+        sections.append(
+            f'  <h2 class="mono">Week ending {last} — highest materiality first</h2>\n'
+            f'  <div class="entries">\n{chr(10).join(rows)}\n  </div>'
+        )
+    if still_live:
+        rows = []
+        for item in still_live:
+            rows.append(_entry(item, n, materiality, due=_as_date(item["deadline"])))
+            n += 1
+        sections.append(
+            '  <h2 class="mono">Still live — earlier records whose deadline has not passed</h2>\n'
+            f'  <div class="entries">\n{chr(10).join(rows)}\n  </div>'
+        )
+    if not sections:
+        sections.append(
+            '  <h2 class="mono">Nothing currently open</h2>\n'
+            '  <p class="lede sub">The register holds no open record with a live '
+            'deadline. The full register is linked below.</p>'
+        )
+    entries_block = "\n\n".join(sections)
 
     # Optional links are dropped entirely when unset, rather than rendered blank.
     link_items = [
@@ -205,10 +288,7 @@ sources. Maintained by {html.escape(NAME)}.">
   at a global bank. Built only from primary sources, scored on a published
   rubric, so the judgment can be argued with.</p>
 
-  <h2 class="mono">Currently open — highest materiality first</h2>
-  <div class="entries">
-{chr(10).join(rows)}
-  </div>
+{entries_block}
 
   <ul class="links">
     {links}
