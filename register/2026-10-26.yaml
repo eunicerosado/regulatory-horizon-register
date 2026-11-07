@@ -1,0 +1,195 @@
+# RegWatch register, week ending 2026-10-26
+# Backfilled on 2026-11-07. Facts trace to the linked primary source.
+# `verified` records the date the primary source was last re-checked.
+
+window:
+  start: 2026-10-19
+  end: 2026-10-26
+  coverage: partial
+  note: >-
+    Backfill, written 2026-11-07. The week of 26 October 2026 produced a RegWatch edition
+    but never a register file. This file records the three dated items from that edition,
+    each source re-read on 2026-11-07 with `verified` set to that date rather than to the
+    original window. The two SM&CR consultations are kept as separate records because
+    `regulator_short` holds one value and they are separate consultation papers with
+    separate response routes, with the shared policy described in uk-001 and the
+    PRA-specific scope in uk-002. Not recorded: the other briefed items from that edition
+    carry no dates of their own. Two figures from that edition's drafts could not be
+    confirmed on the sources read today and are deliberately absent from these records:
+    a population of about 139,000 certified people, and the description of those people
+    coming off the Financial Services Register. The FCA's page gives no number and says
+    the Directory of certified and assessed persons will be retired; the PRA's page gives
+    about 7,700 certified individuals across roughly 1,200 PRA-authorised firms, which is
+    a PRA-only figure and not comparable. See uk-001.
+
+items:
+  - id: 2026-10-26-us-001
+    jurisdiction: US
+    regulator: Office of the Comptroller of the Currency
+    regulator_short: OCC
+    instrument_type: rule_final
+    title: >-
+      OCC final rule for permitted payment stablecoin issuers and custody activities takes
+      effect 18 January 2027, with the Bank Secrecy Act, AML and OFAC provisions left to a
+      later rulemaking
+    reference: NR 2026-92; GENIUS Act Regulations Final Rule; OCC Bulletins 2026-50, 2026-51, 2026-52
+    published: 2026-10-21
+    effective: 2027-01-18
+    deadline: 2027-01-18
+    deadline_type: application_date
+    source_url: https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-92.html
+    verified: 2026-11-07
+
+    entity_scope: [credit_institutions, payment_service_providers, crypto_asset_service_providers]
+    functions_affected: [compliance, financial_crime, risk, legal, finance, board]
+
+    scores:
+      actionability: 4
+      reach: 4
+
+    rationale: >-
+      The OCC's final rule sets requirements for permitted payment stablecoin issuers and
+      foreign payment stablecoin issuers under OCC jurisdiction, and for certain custody
+      activities by OCC-supervised entities. The rule and the GENIUS Act take effect on 18
+      January 2027. The ordering is the point: the OCC states that the rule addresses its
+      required GENIUS Act regulations "except those on the Bank Secrecy Act, anti-money
+      laundering, and OFAC sanctions," which "will be addressed in a separate rulemaking"
+      in coordination with the Department of the Treasury, with no timeline given. So a
+      licensing regime commences with its financial crime chapter absent, and an issuer
+      authorised under it has a prudential rulebook and no rule-level BSA, AML or
+      sanctions expectations written for its activity. That does not suspend the
+      underlying statutory obligations, which is the trap: firms reading the final rule as
+      the perimeter of their compliance duty will build to a rulebook that is missing its
+      financial crime section rather than to the Bank Secrecy Act itself. Separately, the
+      OCC says it will announce in a later news release when it begins accepting
+      applications and waiver requests, so no application date exists yet and none is
+      recorded. Scored actionability 4 rather than 5: binding with a dated commencement,
+      but roughly a three-month window and contained to one activity. Reach 4 as a
+      defined licence category. `deadline_type` is `application_date` as the day the rules
+      begin to apply.
+
+    required_action: >-
+      Prospective and current payment stablecoin issuers and OCC-supervised custodians
+      should build to the Bank Secrecy Act and OFAC obligations directly rather than
+      waiting for the second rulemaking, and should record that the final rule is not the
+      perimeter of their financial crime duty. Watch for the separate OCC news release
+      opening applications and waiver requests, since no date for it is published.
+
+    status: open
+    supersedes: null
+
+  - id: 2026-10-26-uk-001
+    jurisdiction: UK
+    regulator: Financial Conduct Authority
+    regulator_short: FCA
+    instrument_type: consultation_paper
+    title: >-
+      FCA consults on removing the Certification Regime and retiring the Directory of
+      certified and assessed persons, responses due 22 January 2027
+    reference: CP26/37, Senior Managers and Certification Regime Review, Phase 2
+    published: 2026-10-22
+    effective: null
+    deadline: 2027-01-22
+    deadline_type: consultation_close
+    source_url: https://www.fca.org.uk/publications/consultation-papers/cp26-37-senior-managers-certification-regime-review-phase-2
+    verified: 2026-11-07
+
+    entity_scope: [all_regulated_firms, crypto_asset_service_providers]
+    functions_affected: [compliance, legal, risk, board]
+
+    scores:
+      actionability: 2
+      reach: 5
+
+    rationale: >-
+      The FCA proposes removing certain Senior Management Functions and making other roles
+      notified rather than approved, streamlining the SMF application process, raising
+      thresholds so fewer firms fall in the Enhanced regime, ending ongoing submission of
+      Statements of Responsibilities and Management Responsibilities Maps, streamlining
+      Prescribed Responsibilities, removing the Certification Regime, retiring the
+      Directory of certified and assessed persons, and simplifying Conduct Rule training
+      while raising breach reporting thresholds. Scope is all firms already subject to the
+      SM&CR including third-country branches, and firms due to come into scope such as
+      cryptoasset firms. Responses close 22 January 2027. The second-order consequence is
+      that certification was never the control; it was the artefact evidencing that
+      somebody had performed one. Removing it leaves the fitness and propriety obligation
+      where it was, with no external record to point at, which lands very differently at a
+      firm that ran certification as a real competence assessment than at one that ran it
+      as an annual attestation sweep. The retirement of the Directory is the under-priced
+      part, because that record is currently used by other firms for reference checking
+      and for due diligence on intermediaries, so the information moves inside the firm
+      holding it and becomes harder to obtain for everyone else. Scored actionability 2:
+      direction of travel, with planning assumptions moving rather than any present
+      obligation. Reach 5 as the whole of a major sector in a major jurisdiction.
+      **Two figures from the 26 October edition's drafts are not recorded** because neither
+      could be confirmed on this page today: a population of about 139,000 certified
+      people, for which the FCA page gives no number, and those people coming off the
+      Financial Services Register, where the FCA's own wording is that the Directory of
+      certified and assessed persons will be retired. The Directory sits within the
+      Register, so the edition's phrasing is loose rather than wrong, but the FCA's term is
+      the one to use. Continues the thread at 2026-10-26-uk-002.
+
+    required_action: >-
+      Decide whether to respond by 22 January 2027. Independently of responding, establish
+      whether the firm's certification process produces a competence assessment that would
+      survive the removal of the certificate, since that assessment is what the retained
+      fitness and propriety duty will rest on. Firms that rely on the Directory for
+      reference checking or intermediary due diligence should identify what replaces it.
+
+    status: open
+    supersedes: null
+
+  - id: 2026-10-26-uk-002
+    jurisdiction: UK
+    regulator: Prudential Regulation Authority
+    regulator_short: PRA
+    instrument_type: consultation_paper
+    title: >-
+      PRA consults on removing pre-approval for almost half of Senior Manager Functions
+      and ending certification for about 7,700 individuals, responses due 22 January 2027
+    reference: CP14/26, Review of the Senior Managers and Certification Regime, Phase 2
+    published: 2026-10-22
+    effective: null
+    deadline: 2027-01-22
+    deadline_type: consultation_close
+    source_url: https://www.bankofengland.co.uk/prudential-regulation/publication/2026/october/review-of-the-smcr-phase-two-consultation-paper
+    verified: 2026-11-07
+
+    entity_scope: [credit_institutions, insurers]
+    functions_affected: [compliance, legal, risk, board]
+
+    scores:
+      actionability: 2
+      reach: 4
+
+    rationale: >-
+      Issued alongside the FCA's CP26/37. The PRA proposes replacing pre-approval with
+      notification for almost half of Senior Manager Functions, naming Chief Actuaries and
+      Chairs of Risk and Audit Committees as examples, while keeping pre-approval for roles
+      such as Chief Executive, Chief Finance and Chief Risk. Firms would remain responsible
+      for assessing candidates' fitness and propriety. Fitness and propriety assessments,
+      certificates and regulatory references would no longer be required for about 7,700
+      certified individuals, replaced by an ongoing duty to check competence and personal
+      characteristics. Other proposals include fewer Statements of Responsibilities and
+      Management Responsibilities Maps submissions, removal of several forms including
+      Forms J, M and F, a temporary SMF cover period extended from 12 to 18 weeks,
+      time-limited and conditional approvals, and a higher reporting threshold for some
+      conduct rule breaches. The PRA estimates roughly 1,200 firms in scope, including
+      about 675 deposit takers and 560 insurers. Responses close 22 January 2027.
+      Implementation depends on the Financial Services and Markets Bill and is expected in
+      H2 2027, which is the detail most worth carrying forward, because it means the
+      planning horizon is a legislative dependency rather than a regulatory timetable and
+      can move. Scored actionability 2 as direction of travel. Reach 4 as a defined set of
+      licence categories, roughly 1,200 PRA-authorised firms, which is narrower than the
+      FCA's population and is why the two records band differently. Continues the thread at
+      2026-10-26-uk-001. The 7,700 figure is PRA-only and is not a proxy for the
+      FCA-supervised population.
+
+    required_action: >-
+      Dual-regulated firms should read this alongside CP26/37 and respond once, by 22
+      January 2027, to both where the proposals interact. Note the H2 2027 implementation
+      expectation and its dependence on the Financial Services and Markets Bill when
+      setting any internal project date, rather than planning to the consultation close.
+
+    status: open
+    supersedes: null
