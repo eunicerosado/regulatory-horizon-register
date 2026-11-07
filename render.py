@@ -223,10 +223,16 @@ def render_deadlines(weeks: list[tuple[Path, dict]]) -> str:
         for item in data.get("items") or []:
             if item.get("status") != "open":
                 continue
-            for date_field, kind in (
+            dates = [
                 (item.get("deadline"), item.get("deadline_type") or "deadline"),
                 (item.get("effective"), "compliance_date"),
-            ):
+            ]
+            # Where effective equals deadline, emit one row labelled from
+            # deadline_type, the more specific field, rather than two rows
+            # for the same day.
+            if dates[0][0] is not None and dates[0][0] == dates[1][0]:
+                dates = dates[:1]
+            for date_field, kind in dates:
                 if isinstance(date_field, dt.date) and today <= date_field <= horizon:
                     rows.append((date_field, kind, item))
 
