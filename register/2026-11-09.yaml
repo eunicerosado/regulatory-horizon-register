@@ -35,12 +35,12 @@ items:
     regulator_short: FinCEN
     instrument_type: rule_final
     title: >-
-      From 10 December 2026, FinCEN prohibits covered financial institutions from any
-      transmittal of funds from or to MEXC Global
+      10 December 2026: no transmittals from or to MEXC Global
     reference: >-
-      Federal Register document 2026-22962, 91 FR 72420, published 10 November 2026;
-      order under section 9714(a) of the Combating Russian Money Laundering Act, as
-      amended
+      Imposition of Special Measure Prohibiting the Transmittal of Funds Involving
+      MEXC Global; Federal Register document 2026-22962, 91 FR 72420, published
+      10 November 2026; order under section 9714(a) of the Combating Russian Money
+      Laundering Act, as amended
     published: 2026-11-06
     effective: 2026-12-10
     deadline: null
