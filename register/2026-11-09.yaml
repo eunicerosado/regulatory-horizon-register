@@ -35,7 +35,7 @@ items:
     regulator_short: FinCEN
     instrument_type: rule_final
     title: >-
-      10 December 2026: no transmittals from or to MEXC Global
+      On 10 December 2026, no transmittals from or to MEXC Global
     reference: >-
       Imposition of Special Measure Prohibiting the Transmittal of Funds Involving
       MEXC Global; Federal Register document 2026-22962, 91 FR 72420, published
@@ -43,8 +43,8 @@ items:
       Laundering Act, as amended
     published: 2026-11-06
     effective: 2026-12-10
-    deadline: null
-    deadline_type: null
+    deadline: 2026-12-10
+    deadline_type: compliance_date
     source_url: https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system
     verified: 2026-11-10
 
