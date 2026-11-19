@@ -99,8 +99,14 @@ rewrites `index.html` so the site picks up the new items.
 It also runs on its own at 06:00 UTC daily, so skipping this only means waiting
 until tomorrow — but the site will look a week behind until it runs.
 
-Then check the site: six entries, highest materiality first, at least one per
-jurisdiction where something was recorded.
+Then check the site. The landing page has two sections. The first, headed with
+the latest week-ending date, shows records from the most recent window: one slot
+is reserved for the strongest record in each jurisdiction that reported, and the
+rest fill by materiality. The second, "Still live", shows open records from
+earlier weeks whose deadline has not yet passed, by materiality. In both, ties
+break newest first, and a record with no deadline leaves the page once its week
+is no longer the latest. The number of slots in each section is set in
+`site_page.py`.
 
 ---
 
