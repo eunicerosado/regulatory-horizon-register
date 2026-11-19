@@ -46,7 +46,7 @@ items:
     deadline: 2026-12-10
     deadline_type: compliance_date
     source_url: https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system
-    verified: 2026-11-10
+    verified: 2026-11-16
 
     entity_scope: [credit_institutions, payment_service_providers, money_service_businesses, crypto_asset_service_providers]
     functions_affected: [financial_crime, compliance, operations, technology]
