@@ -22,15 +22,16 @@ items:
     regulator_short: FinCEN
     instrument_type: rule_final
     title: >-
-      FinCEN final rule permanently removes beneficial ownership reporting for
-      US companies and US persons under the Corporate Transparency Act
-    reference: null
+      On 11 August 2026, FinCEN ended BOI reporting for US firms
+    reference: >-
+      Federal Register document 2026-16576, 91 FR 52508, Beneficial Ownership
+      Information Reporting Requirement Revision, published 14 August 2026
     published: 2026-08-11
     effective: 2026-08-14
     deadline: null
     deadline_type: null
     source_url: https://www.fincen.gov/news/news-releases/fincen-permanently-ends-beneficial-ownership-reporting-requirements-millions
-    verified: 2026-08-24
+    verified: 2026-11-19
 
     entity_scope:
       - all_regulated_firms
@@ -47,18 +48,25 @@ items:
       reach: 5
 
     rationale: >-
-      The final rule makes permanent the exemptions first introduced by the
-      March 2025 interim final rule, narrowing "reporting company" to entities
-      formed under foreign law and registered to do business in a US State or
-      Tribal jurisdiction. US companies and US persons no longer report BOI;
-      foreign reporting companies still report BOI for foreign individuals.
-      FinCEN also announced it will delete BOI previously reported by US persons
-      from the database. The second point is the one that reaches beyond US
-      filers: an ownership data source that firms may have expected to
-      corroborate against is being removed, not merely frozen. Verification of
-      US entity ownership reverts entirely to firm-collected evidence. Note also
-      that New York's LLC Transparency Act defines its terms by reference to the
-      federal regime, so its scope narrowed alongside.
+      FinCEN issued a final rule that permanently removes the requirement for US
+      companies and US persons to report beneficial ownership information under the
+      Corporate Transparency Act, effective on publication in the Federal Register.
+      The Federal Register notice, read on 2026-11-19, gives publication and effect as
+      14 August 2026 and states that the rule adopts as final, with certain limited
+      changes, the interim final rule issued on 26 March 2025; it also exempts
+      reporting companies from submitting information about US person company
+      applicants, and exempts US persons from updating information provided to obtain
+      a FinCEN identifier. Foreign entities that are reporting companies must still
+      report beneficial ownership information for foreign individuals. FinCEN also
+      announced that it will delete previously reported information of US persons from
+      the beneficial ownership information database. The second point is the one that
+      reaches beyond US filers: an ownership data source that firms may have expected
+      to corroborate against is being removed, not merely frozen, so verification of
+      US entity ownership reverts entirely to firm-collected evidence. Verification on
+      2026-11-19 removed two claims that neither the release nor the notice supports:
+      that the rule narrows "reporting company" to entities formed under foreign law
+      and registered to do business in a US State or Tribal jurisdiction, and that New
+      York's LLC Transparency Act narrowed alongside.
 
     required_action: >-
       Review CDD and onboarding policy wherever it references BOI filings or the
