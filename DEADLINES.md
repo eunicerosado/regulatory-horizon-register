@@ -1,16 +1,15 @@
 # Deadlines
 
-Open items falling due in the next 60 days, as at 2026-11-25.
+Open items falling due in the next 60 days, as at 2026-11-26.
 
 | Date | Days | Jur. | Regulator | What | Type | Materiality |
 |------|------|------|-----------|------|------|-------------|
-| 2026-11-25 | 0 | EU | EBA | [EBA consults on draft technical standards for reclassifyi...](https://www.eba.europa.eu/publications-and-media/events/consultation-regulatory-technical-standards-prudential-requirements-investment-firms) | consultation close | Low |
-| 2026-11-30 | 5 | UK | OFSI | [OFSI opens the annual frozen asset review, with reports f...](https://www.gov.uk/government/publications/annual-frozen-asset-review-and-reporting-form) | reporting date | High |
-| 2026-12-07 | 12 | EU | ESMA | [Mandatory electronic, standardised and machine-readable a...](https://www.esma.europa.eu/press-news/esma-news/one-year-go-t1-settlement-regulatory-framework-complete-now-lets-make-it) | compliance date | High |
-| 2026-12-10 | 15 | US | FinCEN | [On 10 December 2026, no transmittals from or to MEXC Global](https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system) | compliance date | High |
-| 2026-12-24 | 29 | UK | FCA | [Consultation closes 24 December 2026 on Financial Crime G...](https://www.fca.org.uk/publications/consultation-papers/cp26-38-financial-crime-guide-updates) | consultation close | Medium |
-| 2026-12-31 | 36 | EU | EBA | [EBA consults on draft technical standards prescribing wha...](https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-draft-technical-standards-institutions-operational-risk-management) | consultation close | Medium |
-| 2026-12-31 | 36 | UK | FCA | [By 31 December 2026, firms must register interest to join...](https://www.fca.org.uk/news/press-releases/fca-explore-quantum-computing-tackle-financial-crime) | consultation close | Low |
-| 2027-01-18 | 54 | US | OCC | [OCC final rule for permitted payment stablecoin issuers a...](https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-92.html) | application date | High |
-| 2027-01-22 | 58 | UK | FCA | [FCA consults on removing the Certification Regime and ret...](https://www.fca.org.uk/publications/consultation-papers/cp26-37-senior-managers-certification-regime-review-phase-2) | consultation close | Medium |
-| 2027-01-22 | 58 | UK | PRA | [PRA consults on removing pre-approval for almost half of ...](https://www.bankofengland.co.uk/prudential-regulation/publication/2026/october/review-of-the-smcr-phase-two-consultation-paper) | consultation close | Medium |
+| 2026-11-30 | 4 | UK | OFSI | [OFSI opens the annual frozen asset review, with reports f...](https://www.gov.uk/government/publications/annual-frozen-asset-review-and-reporting-form) | reporting date | High |
+| 2026-12-07 | 11 | EU | ESMA | [Mandatory electronic, standardised and machine-readable a...](https://www.esma.europa.eu/press-news/esma-news/one-year-go-t1-settlement-regulatory-framework-complete-now-lets-make-it) | compliance date | High |
+| 2026-12-10 | 14 | US | FinCEN | [On 10 December 2026, no transmittals from or to MEXC Global](https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system) | compliance date | High |
+| 2026-12-24 | 28 | UK | FCA | [Consultation closes 24 December 2026 on Financial Crime G...](https://www.fca.org.uk/publications/consultation-papers/cp26-38-financial-crime-guide-updates) | consultation close | Medium |
+| 2026-12-31 | 35 | EU | EBA | [EBA consults on draft technical standards prescribing wha...](https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-draft-technical-standards-institutions-operational-risk-management) | consultation close | Medium |
+| 2026-12-31 | 35 | UK | FCA | [By 31 December 2026, firms must register interest to join...](https://www.fca.org.uk/news/press-releases/fca-explore-quantum-computing-tackle-financial-crime) | consultation close | Low |
+| 2027-01-18 | 53 | US | OCC | [OCC final rule for permitted payment stablecoin issuers a...](https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-92.html) | application date | High |
+| 2027-01-22 | 57 | UK | FCA | [FCA consults on removing the Certification Regime and ret...](https://www.fca.org.uk/publications/consultation-papers/cp26-37-senior-managers-certification-regime-review-phase-2) | consultation close | Medium |
+| 2027-01-22 | 57 | UK | PRA | [PRA consults on removing pre-approval for almost half of ...](https://www.bankofengland.co.uk/prudential-regulation/publication/2026/october/review-of-the-smcr-phase-two-consultation-paper) | consultation close | Medium |
